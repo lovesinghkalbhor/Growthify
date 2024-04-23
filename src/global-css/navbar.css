@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --body: black;
+  --text-color: white;
+  --primary-color: #ff6320;
+}
+body {
+  background-color: var(--body);
+  color: var(--text-color);
+}
+@layer utilities {
+  .orange_button {
+    @apply py-2 px-6  bg-[var(--primary-color)];
+    @apply text-sm rounded-3xl;
+    /* background-color: var(--primary-color); */
+  }
+}

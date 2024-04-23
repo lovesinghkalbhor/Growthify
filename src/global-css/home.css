@@ -1,0 +1,413 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --body: black;
+  --text-color: white;
+  /* --primary-color: #ff6320; */
+  --primary-color: #ef4444;
+  --transparent-white: rgba(255, 255, 255, 0.1);
+}
+body {
+  background-color: var(--body);
+  color: var(--text-color);
+  position: relative;
+  overflow-x: hidden !important;
+}
+@layer utilities {
+  .orange__button-xsmall {
+    @apply py-2 px-4  bg-[var(--primary-color)];
+    @apply text-xs rounded-3xl;
+    /* background-color: var(--primary-color); */
+  }
+  .orange__button-md {
+    @apply py-2 px-5  bg-[var(--primary-color)];
+    @apply text-xs font-medium rounded-3xl;
+    /* background-color: var(--primary-color); */
+  }
+  .orange__button-small {
+    @apply py-2 px-6  bg-[var(--primary-color)];
+    @apply text-xs rounded-3xl;
+    /* background-color: var(--primary-color); */
+  }
+  .transparent__button-small {
+    @apply py-2 px-6  bg-[var(--transparent-white)];
+    @apply text-sm rounded-3xl;
+    /* background-color: var(--primary-color); */
+  }
+  .orange__button-large {
+    @apply py-3 px-8  bg-[var(--primary-color)];
+    @apply text-sm rounded-3xl font-semibold;
+    /* background-color: var(--primary-color); */
+  }
+  .transparent__button-large {
+    @apply py-3 px-8  bg-[var(--transparent-white)];
+    @apply text-sm rounded-3xl font-semibold;
+    /* background-color: var(--primary-color); */
+  }
+
+  .transparent__button-md {
+    @apply py-2 px-5 bg-[var(--transparent-white)];
+    @apply text-xs font-medium rounded-3xl;
+    /* background-color: var(--primary-color); */
+  }
+
+  .section__heading {
+    @apply flex  relative items-center text-white md:text-5xl sm:text-4xl xs:text-3xl text-2xl font-bold md:tracking-[0.5rem] tracking-[0.2rem] z-50;
+    /* @apply flex  relative items-center text-[var(--primary-color)] md:text-5xl sm:text-4xl xs:text-3xl text-2xl font-bold md:tracking-[0.5rem] tracking-[0.2rem] z-50; */
+  }
+  .section__heading hr {
+    @apply md:w-32 sm:w-24 w-16 h-1 bg-white sm:ml-14 ml-7;
+  }
+  /* 
+  *************************************************************************************8
+  *************************************************************************************8
+  *************************************************************************************8
+  *************************************************************************************8 */
+
+  /* HERO SECTION CSS STARTS HERE */
+  .hero__container {
+    z-index: 0;
+  }
+  .hero__container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.59) 0%,
+      rgba(0, 0, 0, 0.97) 100%
+    ); /* Adjust opacity for desired dimness */
+  }
+  .hero__text__container {
+    @apply relative;
+    margin-top: 0rem;
+  }
+  .hero__text__container h1,
+  .hero__text__container p,
+  .hero__button__container {
+    position: relative;
+    z-index: 1;
+  }
+  .hero__button__container {
+    margin-top: 4rem;
+  }
+  .hero__text__container + img {
+    @apply absolute;
+    height: auto;
+    width: 60rem;
+    top: -10rem;
+    left: -12rem;
+    z-index: 0;
+  }
+
+  .hero__image__container {
+    @apply relative;
+  }
+
+  .hero__image__container img {
+    /* css for position */
+    @apply absolute  md:-top-24 md:right-[-11rem] top-[-5rem] right-[-8rem] z-0;
+
+    /* css for size */
+    @apply h-auto md:h-auto lg:w-[45rem] w-[35rem];
+  }
+  .hero__image__container .orange__circle {
+    /* css for position */
+    @apply absolute z-0 md:top-[-4.7rem] md:right-[-10.8rem];
+    /* css for size */
+    @apply lg:w-[46.8rem] w-[36rem] h-auto;
+  }
+
+  /* HERO SECTION CSS ENDS HERE */
+  /* 
+    ************************************************************************
+    ************************************************************************
+    ************************************************************************
+    ************************************************************************ */
+
+  .moving__strip {
+    @apply flex space-x-16 bg-stone-900/90  text-white py-4
+    align-middle -rotate-12 z-[200];
+  }
+  .moving__strip span {
+    @apply text-5xl text-nowrap font-medium tracking-wider;
+  }
+  .moving__strip :nth-child(2n) {
+    color: #ef4444;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+  }
+
+  /* ABOUT SECTION CSS STARTS HERE */
+  /* 
+    ************************************************************************
+    ************************************************************************
+    ************************************************************************
+    ************************************************************************ */
+  .about__us {
+    @apply md:h-full sm:h-[40rem] h-[37rem] sm:p-10 p-5 md:p-0;
+    background-image: url("/images/about-us.png");
+    background-size: cover; /* Option: Adjust image size and positioning */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-position: center;
+    color: black;
+  }
+  .about__us:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.8
+    ); /* Adjust opacity for desired dimness */
+  }
+  @media (min-width: 1024px) {
+    /* Adjust breakpoint as needed */
+    .about__us {
+      background-image: none;
+    }
+    .about__us:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      background-color: rgb(255, 255, 255);
+    }
+  }
+  .about__us .section__heading {
+    @apply lg:text-black text-white md:text-[2.6rem] sm:text-4xl xs:text-3xl text-2xl md:tracking-[0.2rem] tracking-[0.2rem];
+  }
+  .about__us hr {
+    @apply lg:bg-black bg-white;
+  }
+  .about__us-text-container {
+    @apply lg:pl-10 md:px-10 lg:px-0 z-10;
+  }
+  .about__us-image-container {
+    @apply lg:w-1/2  w-screen z-0 hidden lg:block lg:relative;
+  }
+
+  .about__us-text-container h2 {
+    /* for font */
+    @apply md:text-2xl lg:text-black text-white md:max-w-[70%] text-2xl tracking-wide md:w-full sm:w-9/12 xs:w-9/12 lg:leading-[2rem] font-bold capitalize;
+
+    /* for spacing */
+    @apply mb-6;
+  }
+  .about__us-text-container p {
+    @apply text-sm lg:text-black text-white md:text-sm;
+    @apply mb-16;
+  }
+  .about__us-text-container {
+    @apply text-sm;
+  }
+
+  .about__us-card-container {
+    @apply pl-20  w-1/2;
+  }
+  .about__us-card {
+    @apply flex flex-col items-center py-10 px-10 w-60;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 1rem;
+  }
+  .about__us-card :first-child {
+    @apply text-[2.5rem] font-bold mb-1;
+  }
+  .about__us-card :last-child {
+    @apply text-sm font-normal mb-1;
+  }
+
+  /* ABOUT SECTION CSS ENDS HERE */
+  /* 
+    ************************************************************************
+    ************************************************************************
+    ************************************************************************
+    ************************************************************************ */
+
+  .our__services {
+    background-image: url("/images/our-services.png");
+    background-size: cover; /* Option: Adjust image size and positioning */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-position: center;
+  }
+  .our__services-cards-container {
+    @apply sm:grid flex flex-wrap justify-start   space-y-10 sm:space-y-0;
+    grid-template-columns: repeat(4, minmax(250px, 300px));
+    column-gap: 2rem;
+  }
+
+  @media (min-width: 768px) {
+    .our__services-cards-container {
+      grid-template-columns: repeat(2, minmax(250px, 300px));
+    }
+  }
+  @media (min-width: 640px) {
+    .our__services-cards-container {
+      grid-template-columns: repeat(2, minmax(100px, 300px));
+    }
+  }
+
+  .our__services-cards {
+    background-color: rgba(0, 0, 0, 0.317);
+    width: 100%;
+    max-width: 400px;
+    @apply z-50 relative sm:py-12 sm:px-8 py-10 px-8 sm:h-[19rem] h-fit;
+    backdrop-filter: blur(36px) !important;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.153);
+  }
+  .our__services-cards img {
+    @apply sm:w-[50px] xs:w-[45px];
+  }
+  .our__services-text-content {
+    @apply sm:mt-10 mt-8 space-y-3;
+  }
+  .our__services-cards span {
+    @apply sm:text-xl font-bold xs:text-lg;
+  }
+  .our__services-cards p {
+    @apply sm:text-xs text-[0.6rem];
+  }
+  .our__services-cards:hover {
+    border: 1px solid rgb(255, 115, 0);
+  }
+
+  /* portfolio section
+  **********************************************************
+  **********************************************************
+  **********************************************************
+  ********************************************************** */
+
+  .portfolio__strip {
+    @apply flex space-x-16  text-white py-4
+    align-middle mt-60 mb-24;
+  }
+  .portfolio__strip span {
+    @apply text-7xl text-nowrap font-medium tracking-wider;
+  }
+  .portfolio__strip :nth-child(2n) {
+    /* @apply border-2 border-red-600; */
+    color: #ef4444;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+  }
+  .portfolio img {
+    width: 100%;
+  }
+  .portfolio .portfolio-image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  .portfolio .portfolio-image-container-info {
+    @apply z-10 absolute lg:space-y-10 sm:space-y-6 xs:space-y-3 space-y-6;
+    bottom: -200%;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.539);
+    backdrop-filter: blur(10px) !important;
+    transition: all;
+    transition-duration: 0.3s;
+
+    @apply rounded-[0.5rem] md:rounded-[0.5rem] lg:py-10 lg:px-6 sm:py-8 sm:px-4 xs:py-6 xs:px-3 py-6 px-4;
+  }
+  .portfolio .portfolio-image-container:hover .portfolio-image-container-info {
+    bottom: 0%;
+  }
+  .portfolio .portfolio-image-container-info span {
+    @apply lg:text-2xl sm:text-xl text-lg font-semibold;
+    @apply lg:mb-4 mb-2;
+  }
+
+  .portfolio .portfolio-image-container-info p {
+    margin-bottom: 1rem;
+    @apply lg:text-base sm:text-xs xs:text-[0.6rem] text-xs font-light md:font-normal;
+  }
+
+  .portfolio .portfolio-image-container-info button {
+    @apply lg:orange__button-large sm:orange__button-md   orange__button-small;
+  }
+
+  /* our client section starts form here */
+
+  .vertical__strip {
+    @apply flex space-x-16  text-white py-4
+    align-middle mt-60 mb-24;
+  }
+  .vertical__strip span {
+    @apply text-7xl text-nowrap font-medium tracking-wider;
+  }
+  .vertical__strip :nth-child(2n) {
+    /* @apply border-2 border-red-600; */
+    color: #ef4444;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+  }
+  .our__clients {
+  }
+  .our__client-cards {
+    background-color: rgba(255, 255, 255, 0.107);
+    width: 100%;
+    padding: 3rem 2rem;
+    backdrop-filter: blur(15px) !important;
+    position: relative;
+    z-index: 100;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    /* height: 19rem; */
+    @apply sm:h-72 h-64;
+  }
+  .our__client-cards .our__client-cards-imageContainer img {
+    @apply w-6;
+  }
+  .our__clients .our__clients-background-light {
+    width: 100%;
+  }
+  .our__client-cards .our__client-cards-imageContainer {
+    @apply space-x-1;
+    display: flex;
+  }
+  .our__client-text-content {
+    @apply sm:mt-10 mt-6 space-y-3;
+  }
+  .our__client-cards span {
+    @apply sm:text-xl xs:text-base font-bold;
+  }
+  .our__client-cards p {
+    @apply sm:text-xs text-[0.6rem];
+  }
+  .our__client-cards:hover {
+    border: 1px solid rgb(255, 115, 0);
+  }
+
+  .query__section {
+    @apply flex flex-col mt-40 content-center  text-5xl font-bold text-center;
+  }
+  .query__section h2 {
+    @apply text-5xl mb-60 uppercase font-bold text-center;
+  }
+  .query__section button {
+    @apply text-3xl w-fit uppercase rounded-full font-semibold mx-auto px-44 py-12 text-center;
+  }
+
+  /* FOOTER */
+
+  footer h2 {
+    @apply text-2xl;
+  }
+}
