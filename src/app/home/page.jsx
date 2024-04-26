@@ -48,48 +48,8 @@ export default function Home() {
             height={100}
           ></Image>
         </header>
-        {/* <header className="lg:container mx-auto">
-          <div className="grid grid-cols-12 grid-rows-4 max-w-7xl ">
-            <div className="hero__text__container col-span-6 row-start-2 col-start-2">
-              <h1 className="lg:text-7xl text-5xl font-semibold">
-                WE ARE <br></br> GROWTHIFY
-              </h1>
-              <p className="lg:text-xl text-lg mt-4">
-                We help your business to grow online
-              </p>
-            </div>
-            <Image
-              className="row-start-2 col-start-2 animate-pulse"
-              src="/images/background-light.png"
-              width={512}
-              height={512}
-            ></Image>
-
-            <div className="hero__button__container col-span-6 row-start-3 col-start-2">
-              <button className="orange__button-large lg:mr-12 mr-8">
-                Contact Us
-              </button>
-              <button className="transparent__button-large">
-                Check our Portfolio
-              </button>
-            </div>
-            <div className="hero__image__container   col-span-full">
-              <Image
-                className="orange__circle"
-                src="/images/orange-circle.png"
-                width={500}
-                height={500}
-              ></Image>
-              <Image
-                src="/images/hero-workers-image.png"
-                width={500}
-                height={500}
-              ></Image>
-            </div>
-          </div>
-        </header> */}
       </div>
-      <section className="moving__strip overflow-hidden -mt-20">
+      <section className="moving__strip overflow-hidden md:-mt-20 sm:-mt-16 xs:-mt-20">
         <span>DIGITAL MARKETING</span>
         <span>UI/UX</span>
         <span>DIGITAL MARKETING</span>
@@ -98,72 +58,8 @@ export default function Home() {
         <span>DIGITAL MARKETING</span>
         <span>DIGITAL MARKETING</span>
       </section>
-      {/* <section className="relative">
-        <div className="about__us xl:container  xl:mx-auto">
-          <div>
-            <div className="section__heading   w-full   justify-start lg:py-36 md:py-24 sm:py-20 py-10 md:px-10 px-0">
-              ABOUT US
-              <hr />
-            </div>
-          </div>
-          <div className="flex lg:flex-row-reverse   pb-60">
-            <div className="about__us-image-container">
-              <Image
-                className="md:pl-10 w-full object-cover ml-auto  z-10 absolute"
-                src="/images/about-us.png"
-                fill={true}
-              ></Image>
-              <div className="right-24 bg-white blur-[12rem] rounded-full w-80 h-80 absolute z-0"></div>
-            </div>
-            <div className="about__us-text-container">
-              <h2>
-                we are <br></br> the team of expert digital marketers and web
-                developers
-              </h2>
-              <p>
-                Extreme dynamic range on the 12.9-inch iPad Pro.4 The
-                Liquid Retina XDR display delivers true-to-life detail with a
-                1,000,000:1 contrast ratio, great for viewing and editing HDR
-                photos and videos or enjoying your favorite movies and TV shows.
-                It also features a breathtaking 1000 nits of full‑screen
-                brightness and 1600
-              </p>
-              <button className="orange__button-large mr-12">Contact Us</button>
-            </div>
-          </div>
-          <div className="flex hidden flex-row-reverse  pb-60">
-            <div className="about__us-image-container relative ">
-              <Image
-                className="pl-10 w-full ml-auto z-10 absolute"
-                src="/images/about-us.png"
-                width={800}
-                height={600}
-              ></Image>
-              <div className="right-24 bg-white blur-[12rem] rounded-full w-80 h-80    absolute z-0  "></div>
-            </div>
-            <div className="about__us-card-container w-1/2 grid grid-cols-2 gap-8 gap-x-0">
-              <div className="about__us-card">
-                <span>10 +</span>
-                <span>Completed Projects</span>
-              </div>
-              <div className="about__us-card">
-                <span>100 +</span>
-                <span>Completed Projects</span>
-              </div>
-              <div className="about__us-card">
-                <span>10 +</span>
-                <span> projects</span>
-              </div>
-              <div className="about__us-card">
-                <span>10 +</span>
-                <span>projects</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
-      <section className="relative mt-56">
+      <section className="relative md:mt-56 sm:mt-48 xs:mt-32 mt-20">
         <div className="about__us xl:container  xl:mx-auto flex lg:flex-row-reverse   pb-60">
           <div className="about__us-image-container relative">
             <Image
@@ -218,6 +114,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <div className=" 2xl:container relative 2xl:mx-auto ">
         <section className="our__services pb-20">
           <div className=" xl:container relative xl:mx-auto 2xl:px-20">
@@ -232,12 +129,12 @@ export default function Home() {
           </div> */}
 
             <div>
-              <div className="section__heading w-full justify-start py-36 px-10">
+              <div className="section__heading w-full justify-start py-28 sm:px-10 px-6">
                 OUR SERVICES
                 <hr />
               </div>
               {/* <div className="our__services-cards-container grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-2 grid-cols-1 gap-10 px-10"> */}
-              <div className="our__services-cards-container   px-10">
+              <div className="our__services-cards-container  sm:px-10 px-6">
                 <div className="our__services-cards relative z-10">
                   <Image
                     src="/images/digital_marketing.png"
@@ -273,7 +170,7 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <section className="portfolio__strip overflow-hidden mt-10">
+      <section className="portfolio__strip overflow-hidden sm:mt-10 mt-6">
         <span>OUR</span>
         <span>PORTFOLIO</span>
         <span>OUR</span>
@@ -484,170 +381,172 @@ export default function Home() {
         <span>WEB</span>
         <span>DEVELOPMENT</span>
       </section> */}
-      <section className="our__clients xl:container mx-auto bg-slate-950">
-        <div className="section__heading w-full justify-start py-36 px-10">
-          OUR CLIENTS
-          <hr />
-        </div>
+      <div className=" bg-slate-950">
+        <section className="our__clients xl:container mx-auto">
+          <div className="section__heading w-full justify-start py-36 px-10">
+            OUR CLIENTS
+            <hr />
+          </div>
 
-        <div className="relative  grid sm:grid-cols-2 gap-5 p-20 px-10 pt-5 lg:w-3/5 md:w-4/5 justify-items-end">
-          <Image
-            className="absolute our__clients-background-light -top-0"
-            src="/images/background-light.png"
-            width={512}
-            height={512}
-          ></Image>
-          <div className="our__client-cards relative z-10">
-            <div className="our__client-cards-imageContainer">
-              <Image
-                src="/images/star-Filled.png"
-                width={100}
-                height={100}
-              ></Image>{" "}
-              <Image
-                src="/images/star-Filled.png"
-                width={100}
-                height={100}
-              ></Image>{" "}
-              <Image
-                src="/images/star-Filled.png"
-                width={100}
-                height={100}
-              ></Image>{" "}
-              <Image
-                src="/images/star-half.png"
-                width={100}
-                height={100}
-              ></Image>{" "}
-              <Image
-                src="/images/star-empty.png"
-                width={100}
-                height={100}
-              ></Image>{" "}
-            </div>
+          <div className="relative  grid sm:grid-cols-2 gap-5 p-20 px-10 pt-5 lg:w-3/5 md:w-4/5 justify-items-end">
+            <Image
+              className="absolute our__clients-background-light -top-0"
+              src="/images/background-light.png"
+              width={512}
+              height={512}
+            ></Image>
+            <div className="our__client-cards relative z-10">
+              <div className="our__client-cards-imageContainer">
+                <Image
+                  src="/images/star-Filled.png"
+                  width={100}
+                  height={100}
+                ></Image>{" "}
+                <Image
+                  src="/images/star-Filled.png"
+                  width={100}
+                  height={100}
+                ></Image>{" "}
+                <Image
+                  src="/images/star-Filled.png"
+                  width={100}
+                  height={100}
+                ></Image>{" "}
+                <Image
+                  src="/images/star-half.png"
+                  width={100}
+                  height={100}
+                ></Image>{" "}
+                <Image
+                  src="/images/star-empty.png"
+                  width={100}
+                  height={100}
+                ></Image>{" "}
+              </div>
 
-            <div className="our__client-text-content">
-              <span> Digital marketing</span>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Debitis autem eius eveniet libero unde quia deserunt aspernatur
-                modi. Exercitationem, praesentium!
-              </p>
+              <div className="our__client-text-content">
+                <span> Digital marketing</span>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Debitis autem eius eveniet libero unde quia deserunt
+                  aspernatur modi. Exercitationem, praesentium!
+                </p>
+              </div>
+            </div>
+            <div className="our__client-cards relative z-10">
+              <div className="our__client-cards-imageContainer">
+                <Image
+                  src="/images/star-Filled.png"
+                  width={100}
+                  height={100}
+                ></Image>{" "}
+                <Image
+                  src="/images/star-Filled.png"
+                  width={100}
+                  height={100}
+                ></Image>{" "}
+                <Image
+                  src="/images/star-Filled.png"
+                  width={100}
+                  height={100}
+                ></Image>{" "}
+                <Image
+                  src="/images/star-half.png"
+                  width={100}
+                  height={100}
+                ></Image>{" "}
+                <Image
+                  src="/images/star-empty.png"
+                  width={100}
+                  height={100}
+                ></Image>{" "}
+              </div>
+              <div className="our__client-text-content">
+                <span> Digital marketing</span>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Debitis autem eius eveniet libero unde quia deserunt
+                  aspernatur modi. Exercitationem, praesentium!
+                </p>
+              </div>
+            </div>
+            <div className="our__client-cards relative z-10">
+              <div className="our__client-cards-imageContainer">
+                <Image
+                  src="/images/star-Filled.png"
+                  width={100}
+                  height={100}
+                ></Image>{" "}
+                <Image
+                  src="/images/star-Filled.png"
+                  width={100}
+                  height={100}
+                ></Image>{" "}
+                <Image
+                  src="/images/star-Filled.png"
+                  width={100}
+                  height={100}
+                ></Image>{" "}
+                <Image
+                  src="/images/star-half.png"
+                  width={100}
+                  height={100}
+                ></Image>{" "}
+                <Image
+                  src="/images/star-empty.png"
+                  width={100}
+                  height={100}
+                ></Image>{" "}
+              </div>
+              <div className="our__client-text-content">
+                <span> Digital marketing</span>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Debitis autem eius eveniet libero unde quia deserunt
+                  aspernatur modi. Exercitationem, praesentium!
+                </p>
+              </div>
+            </div>
+            <div className="our__client-cards relative z-10">
+              <div className="our__client-cards-imageContainer">
+                <Image
+                  src="/images/star-Filled.png"
+                  width={100}
+                  height={100}
+                ></Image>{" "}
+                <Image
+                  src="/images/star-Filled.png"
+                  width={100}
+                  height={100}
+                ></Image>{" "}
+                <Image
+                  src="/images/star-Filled.png"
+                  width={100}
+                  height={100}
+                ></Image>{" "}
+                <Image
+                  src="/images/star-half.png"
+                  width={100}
+                  height={100}
+                ></Image>{" "}
+                <Image
+                  src="/images/star-empty.png"
+                  width={100}
+                  height={100}
+                ></Image>{" "}
+              </div>
+              <div className="our__client-text-content">
+                <span> Digital marketing</span>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Debitis autem eius eveniet libero unde quia deserunt
+                  aspernatur modi. Exercitationem, praesentium!
+                </p>
+              </div>
             </div>
           </div>
-          <div className="our__client-cards relative z-10">
-            <div className="our__client-cards-imageContainer">
-              <Image
-                src="/images/star-Filled.png"
-                width={100}
-                height={100}
-              ></Image>{" "}
-              <Image
-                src="/images/star-Filled.png"
-                width={100}
-                height={100}
-              ></Image>{" "}
-              <Image
-                src="/images/star-Filled.png"
-                width={100}
-                height={100}
-              ></Image>{" "}
-              <Image
-                src="/images/star-half.png"
-                width={100}
-                height={100}
-              ></Image>{" "}
-              <Image
-                src="/images/star-empty.png"
-                width={100}
-                height={100}
-              ></Image>{" "}
-            </div>
-            <div className="our__client-text-content">
-              <span> Digital marketing</span>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Debitis autem eius eveniet libero unde quia deserunt aspernatur
-                modi. Exercitationem, praesentium!
-              </p>
-            </div>
-          </div>
-          <div className="our__client-cards relative z-10">
-            <div className="our__client-cards-imageContainer">
-              <Image
-                src="/images/star-Filled.png"
-                width={100}
-                height={100}
-              ></Image>{" "}
-              <Image
-                src="/images/star-Filled.png"
-                width={100}
-                height={100}
-              ></Image>{" "}
-              <Image
-                src="/images/star-Filled.png"
-                width={100}
-                height={100}
-              ></Image>{" "}
-              <Image
-                src="/images/star-half.png"
-                width={100}
-                height={100}
-              ></Image>{" "}
-              <Image
-                src="/images/star-empty.png"
-                width={100}
-                height={100}
-              ></Image>{" "}
-            </div>
-            <div className="our__client-text-content">
-              <span> Digital marketing</span>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Debitis autem eius eveniet libero unde quia deserunt aspernatur
-                modi. Exercitationem, praesentium!
-              </p>
-            </div>
-          </div>
-          <div className="our__client-cards relative z-10">
-            <div className="our__client-cards-imageContainer">
-              <Image
-                src="/images/star-Filled.png"
-                width={100}
-                height={100}
-              ></Image>{" "}
-              <Image
-                src="/images/star-Filled.png"
-                width={100}
-                height={100}
-              ></Image>{" "}
-              <Image
-                src="/images/star-Filled.png"
-                width={100}
-                height={100}
-              ></Image>{" "}
-              <Image
-                src="/images/star-half.png"
-                width={100}
-                height={100}
-              ></Image>{" "}
-              <Image
-                src="/images/star-empty.png"
-                width={100}
-                height={100}
-              ></Image>{" "}
-            </div>
-            <div className="our__client-text-content">
-              <span> Digital marketing</span>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Debitis autem eius eveniet libero unde quia deserunt aspernatur
-                modi. Exercitationem, praesentium!
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       {/* <section className="query__section">
         <h2>

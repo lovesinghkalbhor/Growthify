@@ -133,11 +133,11 @@ body {
     ************************************************************************ */
 
   .moving__strip {
-    @apply flex space-x-16 bg-stone-900/90  text-white py-4
-    align-middle -rotate-12 z-[200];
+    @apply flex md:space-x-16 sm:space-x-10 xs:space-x-6 space-x-3 bg-stone-950/90  text-white py-4
+    align-middle -rotate-6 z-[200];
   }
   .moving__strip span {
-    @apply text-5xl text-nowrap font-medium tracking-wider;
+    @apply sm:text-4xl xs:text-3xl text-2xl   md:text-5xl  text-nowrap font-medium tracking-wider;
   }
   .moving__strip :nth-child(2n) {
     color: #ef4444;
@@ -152,7 +152,7 @@ body {
     ************************************************************************
     ************************************************************************ */
   .about__us {
-    @apply md:h-full sm:h-[40rem] h-[37rem] sm:p-10 p-5 md:p-0;
+    @apply md:h-full sm:h-[40rem] h-fit sm:p-10 p-5 md:p-0;
     background-image: url("/images/about-us.png");
     background-size: cover; /* Option: Adjust image size and positioning */
     background-repeat: no-repeat; /* Prevent image repetition */
@@ -240,7 +240,9 @@ body {
     ************************************************************************
     ************************************************************************
     ************************************************************************ */
-
+  .our__services .section__heading {
+    @apply md:text-[2.6rem] sm:text-4xl xs:text-3xl text-2xl md:tracking-[0.2rem] tracking-[0.2rem];
+  }
   .our__services {
     background-image: url("/images/our-services.png");
     background-size: cover; /* Option: Adjust image size and positioning */
@@ -296,18 +298,19 @@ body {
   ********************************************************** */
 
   .portfolio__strip {
-    @apply flex space-x-16  text-white py-4
-    align-middle mt-60 mb-24;
+    @apply flex md:space-x-16 sm:space-x-10 xs:space-x-6 space-x-3  text-white py-4
+
+    align-middle md:mt-60 sm:mt-56 mb-24;
   }
   .portfolio__strip span {
-    @apply text-7xl text-nowrap font-medium tracking-wider;
+    @apply sm:text-4xl xs:text-3xl text-2xl   md:text-5xl  text-nowrap font-medium tracking-wider;
   }
   .portfolio__strip :nth-child(2n) {
-    /* @apply border-2 border-red-600; */
     color: #ef4444;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
   }
+
   .portfolio img {
     width: 100%;
   }
