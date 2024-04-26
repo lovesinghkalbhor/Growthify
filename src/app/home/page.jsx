@@ -222,26 +222,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="portfolio-image-container">
-              <Image
-                src="/images/portfolio_image.png"
-                width={300}
-                height={300}
-              ></Image>
-              <div className="portfolio-image-container-info">
-                <span> Web Development</span>
-                <div>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis autem eius eveniet libero unde quia deserunt
-                    aspernatur modi. Exercitationem, praesentium!
-                  </p>
-                  <button className="orange__button-large mr-12">
-                    Contact Us
-                  </button>
-                </div>
-              </div>
-            </div>
           </div>
           <div className="space-y-10">
             <div className="portfolio-image-container">
@@ -285,52 +265,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="portfolio-image-container">
-              <Image
-                src="/images/portfolio_image.png"
-                width={300}
-                height={300}
-              ></Image>
-              <div className="portfolio-image-container-info">
-                <span> Web Development</span>
-                <div>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis autem eius eveniet libero unde quia deserunt
-                    aspernatur modi. Exercitationem, praesentium!
-                  </p>
-                  <button className="orange__button-large mr-12">
-                    Contact Us
-                  </button>
-                </div>
-              </div>
-            </div>
           </div>
           <div className="space-y-10  ">
             <div className="portfolio-image-container">
               <Image
                 src="/images/short_portfolio_image.png"
-                width={300}
-                height={300}
-              ></Image>
-              <div className="portfolio-image-container-info">
-                <span> Web Development</span>
-                <div>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis autem eius eveniet libero unde quia deserunt
-                    aspernatur modi. Exercitationem, praesentium!
-                  </p>
-                  <button className="orange__button-large mr-12">
-                    Contact Us
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div className="portfolio-image-container">
-              <Image
-                src="/images/portfolio_image.png"
                 width={300}
                 height={300}
               ></Image>
