@@ -216,7 +216,7 @@ export default function Home() {
           </div>
           <div className="lg:w-1/2 z-50   mb-32">
             <div>
-              <div className="section__heading justify-start lg:py-28 md:py-24 sm:py-20 pt-20 pb-32 md:px-10 px-0">
+              <div className="section__heading justify-start lg:py-28 md:py-24 sm:py-20 pt-20 xs:pb-32 pb-24 md:px-10 px-0">
                 <motion.h1
                   initial="hidden"
                   whileInView="show"
@@ -529,7 +529,7 @@ export default function Home() {
       </section> */}
       <div className=" bg-slate-950">
         <section className="our__clients xl:container mx-auto">
-          <div className="section__heading w-full justify-start sm:py-36 xs:py-28 py-20 px-10">
+          <div className="section__heading w-full justify-start sm:py-36 xs:py-28 py-20 sx:px-10 px-5">
             <motion.h1
               initial="hidden"
               whileInView="show"
