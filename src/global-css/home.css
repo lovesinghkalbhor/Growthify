@@ -140,7 +140,7 @@ body {
     ************************************************************************ */
 
   .moving__strip {
-    @apply flex md:space-x-16 sm:space-x-10 xs:space-x-6 space-x-3 bg-stone-950/90  text-white py-4
+    @apply flex md:space-x-16 sm:space-x-10 xs:space-x-6 space-x-3    text-white py-4
     align-middle rotate-0 z-[200];
   }
   .moving__strip span {

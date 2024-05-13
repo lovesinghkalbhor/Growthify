@@ -151,7 +151,7 @@ export default function Home() {
 
       <motion.div
         ref={contentRef}
-        className="relative overflow-hidden md:-mt-20 sm:-mt-16 xs:-mt-20"
+        className="relative overflow-hidden md:-mt-20 sm:-mt-16 xs:-mt-12 mt-5"
         onMouseEnter={handleHoverStart}
         onMouseLeave={handleHoverEnd}
       >
