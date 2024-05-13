@@ -8,7 +8,7 @@ const our_services_heading = "OUR SERVICES";
 const hero_heading = "WE ARE GROWTHIFY SERVICES ONLINE BUSINESS SOLUTION";
 const our_client_heading = "OUR CLIENT";
 const hero_para =
-  "We help your business to grow online with minimal efforts and helops you to grow your business";
+  "We help your business to grow online with minimal efforts and helps you to grow your business";
 
 export default function Home() {
   // animation for cards
@@ -527,7 +527,7 @@ export default function Home() {
         <span>WEB</span>
         <span>DEVELOPMENT</span>
       </section> */}
-      <div className=" bg-slate-950">
+      <div className=" bg-stone-950">
         <section className="our__clients xl:container mx-auto">
           <div className="section__heading w-full justify-start sm:py-36 xs:py-28 py-20 sx:px-10 px-5">
             <motion.h1
