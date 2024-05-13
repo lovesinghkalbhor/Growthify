@@ -385,8 +385,8 @@ export default function Home() {
         </motion.div>
       </motion.div>
 
-      <section className="portfolio mt-20 container mx-auto mb-28 md:p-12 p-4">
-        <div className="grid md:grid-cols-3 xs:grid-cols-2 gap-16 xs:p-0 p-16 ">
+      <section className="portfolio mt-20 container mx-auto  mb-28 md:p-12 xs:p-0 p-4">
+        <div className="grid md:grid-cols-3 xs:grid-cols-2 gap-16  xs:p-0 p-6 ">
           <div className="space-y-10">
             <div className="portfolio-image-container">
               <Image
@@ -529,7 +529,7 @@ export default function Home() {
       </section> */}
       <div className=" bg-slate-950">
         <section className="our__clients xl:container mx-auto">
-          <div className="section__heading w-full justify-start py-36 px-10">
+          <div className="section__heading w-full justify-start sm:py-36 xs:py-28 py-20 px-10">
             <motion.h1
               initial="hidden"
               whileInView="show"
@@ -725,7 +725,7 @@ export default function Home() {
       <footer>
         <div className="lg:mt-32 mt-20 w-full min-h-screen flex items-center justify-center bg-black">
           <div className="px-10 w-full  text-white flex flex-col">
-            <div className="w-full text-7xl font-bold">
+            <div className="w-full sm:text-7xl text-5xl font-bold">
               <h1 className="w-full md:w-2/3">
                 How can we help you. get in touch
               </h1>
