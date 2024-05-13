@@ -13,8 +13,15 @@ body {
   background-color: var(--body);
   color: var(--text-color);
   position: relative;
-  overflow-x: hidden !important;
+  overflow-x: hidden; /* Consider removing "!important" if no conflicts */
+  scrollbar-width: none; /* Attempt to use a thinner scrollbar */
 }
+
+/* Webkit Browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
 @layer utilities {
   .orange__button-xsmall {
     @apply py-2 px-4  bg-[var(--primary-color)];
@@ -134,15 +141,35 @@ body {
 
   .moving__strip {
     @apply flex md:space-x-16 sm:space-x-10 xs:space-x-6 space-x-3 bg-stone-950/90  text-white py-4
-    align-middle -rotate-6 z-[200];
+    align-middle rotate-0 z-[200];
   }
   .moving__strip span {
-    @apply sm:text-4xl xs:text-3xl text-2xl   md:text-5xl  text-nowrap font-medium tracking-wider;
+    @apply xs:text-3xl text-2xl   md:text-4xl  lg:text-5xl  text-nowrap font-medium tracking-wider;
   }
   .moving__strip :nth-child(2n) {
     color: #ef4444;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
+  }
+  .moving__strip_left {
+    @apply absolute left-0 top-0   sm:w-32 w-20 h-full;
+    z-index: 999;
+    background: rgb(68, 68, 68);
+    background: linear-gradient(
+      266deg,
+      rgba(68, 68, 68, 0) 0%,
+      rgba(0, 0, 0, 1) 75%
+    );
+  }
+  .moving__strip_right {
+    @apply absolute right-0 top-0   sm:w-32 w-20 h-full;
+    z-index: 999;
+    background: rgb(68, 68, 68);
+    background: linear-gradient(
+      93deg,
+      rgba(68, 68, 68, 0) 0%,
+      rgba(0, 0, 0, 1) 75%
+    );
   }
 
   /* ABOUT SECTION CSS STARTS HERE */
@@ -300,7 +327,7 @@ body {
   .portfolio__strip {
     @apply flex md:space-x-16 sm:space-x-10 xs:space-x-6 space-x-3  text-white py-4
 
-    align-middle md:mt-60 sm:mt-56 mb-24;
+    align-middle;
   }
   .portfolio__strip span {
     @apply sm:text-4xl xs:text-3xl text-2xl   md:text-5xl  text-nowrap font-medium tracking-wider;
@@ -333,13 +360,13 @@ body {
     bottom: 0%;
   }
   .portfolio .portfolio-image-container-info span {
-    @apply lg:text-2xl sm:text-xl text-lg font-semibold;
+    @apply sm:text-xl text-lg font-semibold;
     @apply lg:mb-4 mb-2;
   }
 
   .portfolio .portfolio-image-container-info p {
     margin-bottom: 1rem;
-    @apply lg:text-base sm:text-xs xs:text-[0.6rem] text-xs font-light md:font-normal;
+    @apply lg:text-sm sm:text-xs xs:text-[0.6rem] text-xs font-light md:font-normal;
   }
 
   .portfolio .portfolio-image-container-info button {
