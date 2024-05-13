@@ -205,7 +205,7 @@ export default function Home() {
         </motion.div> */}
       </motion.div>
 
-      <section className="relative md:mt-40 sm:mt-48 xs:mt-32 mt-20">
+      <section className="relative md:mt-40 sm:mt-48 xs:mt-32 mt-28">
         <div className="about__us xl:container  xl:mx-auto flex lg:flex-row-reverse   pb-60">
           <div className="about__us-image-container relative">
             <Image
