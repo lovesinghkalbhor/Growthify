@@ -4,7 +4,7 @@
 
 :root {
   --body: black;
-  --text-color: white;
+  --text-color: black;
   --primary-color: #ff6320;
 }
 body {
