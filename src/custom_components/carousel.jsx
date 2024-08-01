@@ -31,6 +31,7 @@ export default function Carousel({ children }) {
       <div className="flex justify-between mb-16  max-w-xl mx-auto">
         {crousal_name.map((Name, nameindex) => (
           <h1
+            key={nameindex}
             className={`text-base border-b-2 pb-4 ${
               count === nameindex
                 ? "text-orange-600 border-orange-600"

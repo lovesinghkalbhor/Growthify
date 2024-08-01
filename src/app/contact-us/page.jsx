@@ -4,7 +4,6 @@ import Footer from "@/custom_components/footer";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
-import { stagger } from "framer-motion";
 const query_heading = "SEND US A MESSAGE";
 const our_services_heading = "OUR SERVICES";
 const hero_heading = "CONTACT US";
