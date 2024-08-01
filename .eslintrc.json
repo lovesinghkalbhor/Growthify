@@ -2,9 +2,17 @@
 //   "extends": "next/core-web-vitals"
 // }
 
+// {
+//   "extends": "next/core-web-vitals",
+//   "rules": {
+//     "*": "off"
+//   }
+// }
+
 {
-  "extends": "next/core-web-vitals",
+  "extends": "next",
   "rules": {
-    "*": "off"
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off"
   }
 }
