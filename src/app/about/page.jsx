@@ -5,12 +5,10 @@ import { motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import { stagger } from "framer-motion";
 import Footer from "@/custom_components/footer";
-const query_heading = "SEND US A MESSAGE";
-const about_us_heading = "ABOUT US";
+
 const hero_heading = "ABOUT US";
-const contact_details_heading = "CONTACT DETAILS";
-const features_provided =
-  "We’re a trusted growth partner to thousands of everyday entrepreneurs";
+
+("We’re a trusted growth partner to thousands of everyday entrepreneurs");
 
 const hero_para =
   "We help your business to grow online with minimal efforts and helps you to grow your business";

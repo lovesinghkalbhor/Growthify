@@ -1,5 +1,6 @@
 "use client";
 import "@/global-css/web-dev.css";
+import Footer from "@/custom_components/footer";
 
 import Image from "next/image";
 import Carousel from "@/custom_components/carousel";

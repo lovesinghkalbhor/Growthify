@@ -1,5 +1,6 @@
 "use client";
 import "@/global-css/contact-us.css";
+import Footer from "@/custom_components/footer";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
