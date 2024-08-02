@@ -2,16 +2,7 @@
 import "@/global-css/about-us.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useRef, useEffect, useState } from "react";
-import { stagger } from "framer-motion";
 import Footer from "@/custom_components/footer";
-
-const hero_heading = "ABOUT US";
-
-("We’re a trusted growth partner to thousands of everyday entrepreneurs");
-
-const hero_para =
-  "We help your business to grow online with minimal efforts and helps you to grow your business";
 
 export default function Home() {
   // animation for cards
@@ -38,53 +29,7 @@ export default function Home() {
     // Use the spread operator (...) to unpack the string into an array of characters
     return [...str];
   }
-  // animation for first moving stripe
-  const [isHovering, setIsHovering] = useState(false); // Initial state is not hovering
-  const contentRef = useRef(null);
-  const containerWidth = useRef(0);
-  const animationProgress = useRef(0);
 
-  useEffect(() => {
-    if (contentRef.current) {
-      containerWidth.current = contentRef.current.offsetWidth;
-      animationProgress.current = containerWidth.current * -1; // Initial progress
-    }
-  }, [contentRef]);
-  useEffect(() => {
-    setIsHovering(true);
-  }, []);
-
-  const handleHoverStart = () => {
-    setIsHovering(false);
-  };
-
-  const handleHoverEnd = () => {
-    setIsHovering(true);
-  };
-
-  // animation for protfolio moving stipe
-  const [isHoveringportfolio, setIsHoveringportfolio] = useState(false); // Initial state is not hovering
-  const contentRefportfolio = useRef(null);
-  const containerWidthportfolio = useRef(0);
-  const animationProgressportfolio = useRef(0);
-
-  useEffect(() => {
-    if (contentRefportfolio.current) {
-      containerWidthportfolio.current = contentRefportfolio.current.offsetWidth;
-      animationProgressportfolio.current = containerWidthportfolio.current * -1; // Initial progress
-    }
-  }, [contentRefportfolio]);
-  useEffect(() => {
-    setIsHoveringportfolio(true);
-  }, []);
-
-  const handleHoverStartportfolio = () => {
-    setIsHoveringportfolio(false);
-  };
-
-  const handleHoverEndportfolio = () => {
-    setIsHoveringportfolio(true);
-  };
   return (
     <>
       <div className=" hero__container overflow-x-hidden relative z-60 sm:mb-10 xs:mb-20">
@@ -106,7 +51,7 @@ export default function Home() {
                 whileInView="show"
                 transition={{ staggerChildren: 0.02 }}
               >
-                {stringToCharArray(hero_heading).map((char) => (
+                {stringToCharArray("ABOUT US").map((char) => (
                   <motion.span key={char} variants={text_reveal}>
                     {char}
                   </motion.span>

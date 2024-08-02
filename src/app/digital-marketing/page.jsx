@@ -1,29 +1,10 @@
 "use client";
 import "@/global-css/digital-marketing.css";
 import Footer from "@/custom_components/footer";
-
 import Image from "next/image";
-import Carousel from "@/custom_components/carousel";
 import { motion } from "framer-motion";
-import { useRef, useEffect, useState } from "react";
-import { stagger } from "framer-motion";
-const query_heading = "SEND US A MESSAGE";
-const about_us_heading = "ABOUT US";
-
-const our_services_heading = "OUR SERVICES";
-const hero_heading = "DIGITAL MARKETING";
-const contact_details_heading = "CONTACT DETAILS";
-const hero_para =
-  "We help your business to grow online with minimal efforts and helps you to grow your business";
 
 export default function Home() {
-  const carousel_image = [
-    "/images/business-showcase.png",
-    "/images/online-store.png",
-    "/images/portfolio.png",
-    "/images/blogs.png",
-  ];
-
   // animation for cards
   const card_animation_parent = {
     hidden: { opacity: 0, translateX: -100 },
@@ -48,53 +29,7 @@ export default function Home() {
     // Use the spread operator (...) to unpack the string into an array of characters
     return [...str];
   }
-  // animation for first moving stripe
-  const [isHovering, setIsHovering] = useState(false); // Initial state is not hovering
-  const contentRef = useRef(null);
-  const containerWidth = useRef(0);
-  const animationProgress = useRef(0);
 
-  useEffect(() => {
-    if (contentRef.current) {
-      containerWidth.current = contentRef.current.offsetWidth;
-      animationProgress.current = containerWidth.current * -1; // Initial progress
-    }
-  }, [contentRef]);
-  useEffect(() => {
-    setIsHovering(true);
-  }, []);
-
-  const handleHoverStart = () => {
-    setIsHovering(false);
-  };
-
-  const handleHoverEnd = () => {
-    setIsHovering(true);
-  };
-
-  // animation for protfolio moving stipe
-  const [isHoveringportfolio, setIsHoveringportfolio] = useState(false); // Initial state is not hovering
-  const contentRefportfolio = useRef(null);
-  const containerWidthportfolio = useRef(0);
-  const animationProgressportfolio = useRef(0);
-
-  useEffect(() => {
-    if (contentRefportfolio.current) {
-      containerWidthportfolio.current = contentRefportfolio.current.offsetWidth;
-      animationProgressportfolio.current = containerWidthportfolio.current * -1; // Initial progress
-    }
-  }, [contentRefportfolio]);
-  useEffect(() => {
-    setIsHoveringportfolio(true);
-  }, []);
-
-  const handleHoverStartportfolio = () => {
-    setIsHoveringportfolio(false);
-  };
-
-  const handleHoverEndportfolio = () => {
-    setIsHoveringportfolio(true);
-  };
   return (
     <>
       <div className=" hero__container overflow-x-hidden relative z-60 sm:mb-10 xs:mb-20">
@@ -116,7 +51,7 @@ export default function Home() {
                 whileInView="show"
                 transition={{ staggerChildren: 0.02 }}
               >
-                {stringToCharArray(hero_heading).map((char) => (
+                {stringToCharArray("DIGITAL MARKETING").map((char) => (
                   <motion.span key={char} variants={text_reveal}>
                     {char}
                   </motion.span>
@@ -129,7 +64,9 @@ export default function Home() {
                 transition={{ staggerChildren: 0.01 }}
                 className=" sm:text-base text-sm mt-4"
               >
-                {stringToCharArray(hero_para).map((char) => (
+                {stringToCharArray(
+                  "We help your business to grow online with minimal efforts and helps you to grow your business"
+                ).map((char) => (
                   <motion.span key={char} variants={text_reveal}>
                     {char}
                   </motion.span>
@@ -166,7 +103,7 @@ export default function Home() {
                   whileInView="show"
                   transition={{ staggerChildren: 0.1 }}
                 >
-                  {stringToCharArray(about_us_heading).map((char) => (
+                  {stringToCharArray("ABOUT US").map((char) => (
                     <motion.span
                       key={char}
                       variants={text_reveal}

@@ -3,7 +3,6 @@ import "@/global-css/home.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
-import { stagger } from "framer-motion";
 import Footer from "@/custom_components/footer";
 const about_us_heading = "ABOUT US";
 const our_services_heading = "OUR SERVICES";
@@ -154,8 +153,8 @@ export default function Home() {
           className="object-cover absolute h-full w-full"
           src="/images/hero-workers-background-image.png"
           // fill={true}
-          width={500}
-          height={300}
+          width={400}
+          height={200}
         ></Image>
 
         <header className="mx-auto max-w-5xl ">
