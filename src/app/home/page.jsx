@@ -157,7 +157,7 @@ export default function Home() {
           height={200}
         ></Image>
 
-        <header className="mx-auto max-w-5xl ">
+        <header className="mx-auto md:max-w-3xl sm:max-w-xl  max-w-lg">
           <div className=" sm:my-44 sm:mt-52 my-28 mt-40 md:mx-16 text-center sm:mx-auto  mx-6 ">
             {/* <div className="grid-cols-3 my-44 mx-20 max-w-2xl"> */}
             <div className="hero__text__container  sm:mt-0 mt-40">
@@ -167,11 +167,13 @@ export default function Home() {
                 whileInView="show"
                 transition={{ staggerChildren: 0.02 }}
               >
-                {stringToCharArray(hero_heading).map((char) => (
-                  <motion.span key={char} variants={text_reveal}>
-                    {char}
-                  </motion.span>
-                ))}
+                {stringToCharArray("WEB DEV & DIGITAL MARKETING").map(
+                  (char) => (
+                    <motion.span key={char} variants={text_reveal}>
+                      {char}
+                    </motion.span>
+                  )
+                )}
               </motion.h1>
 
               <motion.p

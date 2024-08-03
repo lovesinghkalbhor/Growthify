@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
 
 
 
-          <Navbar></Navbar>
+          <Navbar  ></Navbar>
 
 
           {children}
