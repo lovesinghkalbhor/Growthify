@@ -210,11 +210,10 @@ export default function Home() {
                 <div className="our__services-text-content">
                   <span>Front-end Development</span>
                   <p>
-                    Design your first impression exaltedly! What if you get a
-                    beautifully designed website that attracts clients in the
-                    first blink? We are an excellent Web development company
-                    where our experts create enthralling websites for your
-                    business.
+                    Bring your vision to life with our cutting-edge front-end
+                    development services. We create visually stunning and highly
+                    responsive interfaces that provide an exceptional user
+                    experience.
                   </p>
                 </div>
               </div>
@@ -223,11 +222,10 @@ export default function Home() {
                 <div className="our__services-text-content">
                   <span>Back-end Development</span>
                   <p>
-                    Design your first impression exaltedly! What if you get a
-                    beautifully designed website that attracts clients in the
-                    first blink? We are an excellent Web development company
-                    where our experts create enthralling websites for your
-                    business.
+                    Ensure robust functionality and seamless performance with
+                    our back-end development services. We build powerful and
+                    scalable server-side solutions to support your business
+                    needs.
                   </p>
                 </div>
               </div>
@@ -236,11 +234,10 @@ export default function Home() {
                 <div className="our__services-text-content">
                   <span>CMS Development</span>
                   <p>
-                    Design your first impression exaltedly! What if you get a
-                    beautifully designed website that attracts clients in the
-                    first blink? We are an excellent Web development company
-                    where our experts create enthralling websites for your
-                    business.
+                    Simplify content management with our CMS development
+                    services. We create intuitive and flexible CMS platforms
+                    that allow you to easily update and manage your website
+                    content.
                   </p>
                 </div>
               </div>
@@ -253,11 +250,10 @@ export default function Home() {
                 <div className="our__services-text-content">
                   <span>E-commerse</span>
                   <p>
-                    Design your first impression exaltedly! What if you get a
-                    beautifully designed website that attracts clients in the
-                    first blink? We are an excellent Web development company
-                    where our experts create enthralling websites for your
-                    business.
+                    Boost your online sales with our comprehensive e-commerce
+                    development services. We build secure, scalable, and
+                    user-friendly e-commerce platforms tailored to your business
+                    requirements.
                   </p>
                 </div>
               </div>
@@ -271,9 +267,9 @@ export default function Home() {
                 <div className="our__services-text-content">
                   <span>Web Design</span>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis autem eius eveniet libero unde quia deserunt
-                    aspernatur modi. Exercitationem, praesentium!
+                    Make a lasting impression with our innovative web design
+                    services. Our creative team designs beautiful and functional
+                    websites that captivate and engage your audience.
                   </p>
                 </div>
               </div>
@@ -286,9 +282,9 @@ export default function Home() {
                 <div className="our__services-text-content">
                   <span>React js Development</span>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis autem eius eveniet libero unde quia deserunt
-                    aspernatur modi. Exercitationem, praesentium!
+                    Leverage the power of React JS with our expert development
+                    services. We build dynamic and high-performance web
+                    applications that provide a seamless user experience.
                   </p>
                 </div>
               </div>
@@ -297,9 +293,10 @@ export default function Home() {
                 <div className="our__services-text-content">
                   <span>HTML/CSS/Javascript</span>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis autem eius eveniet libero unde quia deserunt
-                    aspernatur modi. Exercitationem, praesentium!
+                    Craft clean and efficient code with our HTML, CSS, and
+                    JavaScript development services. We create responsive and
+                    interactive websites that are both visually appealing and
+                    functional.
                   </p>
                 </div>
               </div>
@@ -308,9 +305,9 @@ export default function Home() {
                 <div className="our__services-text-content">
                   <span>Node js Development</span>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis autem eius eveniet libero unde quia deserunt
-                    aspernatur modi. Exercitationem, praesentium!
+                    Optimize your server-side applications with our Node JS
+                    development services. We build fast, scalable, and efficient
+                    back-end solutions to support your web applications.
                   </p>
                 </div>
               </div>

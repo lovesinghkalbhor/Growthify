@@ -346,6 +346,7 @@ body {
   }
   .our__services-cards p {
     @apply sm:text-xs text-[0.6rem];
+    line-height: 1.3rem;
   }
   .our__services-cards:hover {
     border: 1px solid rgb(255, 115, 0);
@@ -408,19 +409,6 @@ body {
 
   /* our client section starts form here */
 
-  .vertical__strip {
-    @apply flex space-x-16  text-white py-4
-    align-middle mt-60 mb-24;
-  }
-  .vertical__strip span {
-    @apply text-7xl text-nowrap font-medium tracking-wider;
-  }
-  .vertical__strip :nth-child(2n) {
-    /* @apply border-2 border-red-600; */
-    color: #ef4444;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-  }
   .our__clients {
   }
   .our__client-cards {
@@ -453,19 +441,10 @@ body {
   }
   .our__client-cards p {
     @apply sm:text-xs text-[0.6rem];
+    line-height: 1.3rem;
   }
   .our__client-cards:hover {
     border: 1px solid rgb(255, 115, 0);
-  }
-
-  .query__section {
-    @apply flex flex-col mt-40 content-center  text-5xl font-bold text-center;
-  }
-  .query__section h2 {
-    @apply text-5xl mb-60 uppercase font-bold text-center;
-  }
-  .query__section button {
-    @apply text-3xl w-fit uppercase rounded-full font-semibold mx-auto px-44 py-12 text-center;
   }
 
   /* FOOTER */

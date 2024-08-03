@@ -367,9 +367,10 @@ export default function Home() {
                 <div className="our__services-text-content">
                   <span> Digital marketing</span>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis autem eius eveniet libero unde quia deserunt
-                    aspernatur modi. Exercitationem, praesentium!
+                    Boost your online presence with precision-targeted campaigns
+                    and innovative strategies. Our digital marketing services
+                    are designed to engage your audience and drive measurable
+                    results
                   </p>
                 </div>
               </div>
@@ -382,9 +383,10 @@ export default function Home() {
                 <div className="our__services-text-content">
                   <span>Video Editing</span>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis autem eius eveniet libero unde quia deserunt
-                    aspernatur modi. Exercitationem, praesentium!
+                    Transform raw footage into captivating stories with our
+                    expert video editing services. We create visually stunning
+                    and impactful videos that leave a lasting impression on your
+                    audience.
                   </p>
                 </div>
               </div>
@@ -753,14 +755,6 @@ export default function Home() {
           </motion.div>
         </section>
       </div>
-
-      {/* <section className="query__section">
-        <h2>
-          {" "}
-          Have any project in <br></br>mind
-        </h2>
-        <button className="orange__button-large">Let's Talk</button>
-      </section> */}
 
       <Footer></Footer>
     </>

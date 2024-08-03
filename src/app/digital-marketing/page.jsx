@@ -189,11 +189,9 @@ export default function Home() {
                 <div className="our__services-text-content">
                   <span>SEO</span>
                   <p>
-                    Design your first impression exaltedly! What if you get a
-                    beautifully designed website that attracts clients in the
-                    first blink? We are an excellent Web development company
-                    where our experts create enthralling websites for your
-                    business.
+                    Enhance your visibility and rank higher on search engines
+                    with our expert SEO services. We optimize your website to
+                    attract organic traffic and improve your online presence.
                   </p>
                 </div>
               </div>
@@ -206,11 +204,10 @@ export default function Home() {
                 <div className="our__services-text-content">
                   <span>Email marketing</span>
                   <p>
-                    Design your first impression exaltedly! What if you get a
-                    beautifully designed website that attracts clients in the
-                    first blink? We are an excellent Web development company
-                    where our experts create enthralling websites for your
-                    business.
+                    Engage your audience directly with personalized email
+                    campaigns. Our email marketing services help you connect
+                    with customers, increase conversions, and build lasting
+                    relationships.
                   </p>
                 </div>
               </div>
@@ -223,11 +220,9 @@ export default function Home() {
                 <div className="our__services-text-content">
                   <span>Social media marketing</span>
                   <p>
-                    Design your first impression exaltedly! What if you get a
-                    beautifully designed website that attracts clients in the
-                    first blink? We are an excellent Web development company
-                    where our experts create enthralling websites for your
-                    business.
+                    Amplify your brand's voice across social platforms with our
+                    strategic social media marketing. We create engaging content
+                    that drives interaction and builds your online community.
                   </p>
                 </div>
               </div>
@@ -240,11 +235,9 @@ export default function Home() {
                 <div className="our__services-text-content">
                   <span>Pay-per-click</span>
                   <p>
-                    Design your first impression exaltedly! What if you get a
-                    beautifully designed website that attracts clients in the
-                    first blink? We are an excellent Web development company
-                    where our experts create enthralling websites for your
-                    business.
+                    Drive instant traffic and boost conversions with our
+                    targeted PPC campaigns. We manage your ads to maximize ROI
+                    and reach your audience effectively.
                   </p>
                 </div>
               </div>
@@ -257,9 +250,9 @@ export default function Home() {
                 <div className="our__services-text-content">
                   <span>Google my business</span>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis autem eius eveniet libero unde quia deserunt
-                    aspernatur modi. Exercitationem, praesentium!
+                    Elevate your local presence with our Google My Business
+                    optimization services. We ensure your business stands out in
+                    local searches, attracting more customers to your door.
                   </p>
                 </div>
               </div>
@@ -272,9 +265,10 @@ export default function Home() {
                 <div className="our__services-text-content">
                   <span>Poster desigining</span>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis autem eius eveniet libero unde quia deserunt
-                    aspernatur modi. Exercitationem, praesentium!
+                    Make a bold statement with our eye-catching poster designs.
+                    Our creative team crafts visually appealing posters that
+                    effectively communicate your message and captivate your
+                    audience.
                   </p>
                 </div>
               </div>
@@ -287,9 +281,9 @@ export default function Home() {
                 <div className="our__services-text-content">
                   <span>Meta ADS</span>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis autem eius eveniet libero unde quia deserunt
-                    aspernatur modi. Exercitationem, praesentium!
+                    Expand your reach and drive targeted traffic with our Meta
+                    Ads services. We create and manage ads that deliver results
+                    on platforms like Facebook and Instagram.
                   </p>
                 </div>
               </div>
@@ -302,9 +296,9 @@ export default function Home() {
                 <div className="our__services-text-content">
                   <span>Google ADS</span>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis autem eius eveniet libero unde quia deserunt
-                    aspernatur modi. Exercitationem, praesentium!
+                    Maximize your online advertising with our expert Google Ads
+                    management. We create targeted campaigns that increase
+                    visibility and drive conversions for your business.
                   </p>
                 </div>
               </div>

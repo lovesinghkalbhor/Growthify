@@ -166,7 +166,7 @@ export default function Home() {
       </section>
 
       <div className="mt-20">
-        <section className="our__clients xl:container mx-auto">
+        <section className="xl:container mx-auto">
           <div className="section__heading-2">
             <h1>Let's Connect Your Brand with Customers</h1>
             <p>
@@ -185,11 +185,11 @@ export default function Home() {
             className="relative about__us-card-container grid sm:grid-cols-2 lg:gap-y-16 sm:gap-y-10 gap-5 pt-5 px-0  lg:w-1/2 sm:w-9/12 md:w-2/3 w-11/12 justify-items-center mx-auto"
           >
             <div className="about__us-card">
-              <span>25 +</span>
+              <span>20 +</span>
               <span>Completed Projects</span>
             </div>
             <div className="about__us-card">
-              <span>6 +</span>
+              <span>1 +</span>
               <span>Years of Experience</span>
             </div>
             <div className="about__us-card">
@@ -320,9 +320,9 @@ export default function Home() {
               <div className="our__services-text-content">
                 <span> Digital marketing</span>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis autem eius eveniet libero unde quia deserunt
-                  aspernatur modi. Exercitationem, praesentium!
+                  Boost your online presence with precision-targeted campaigns
+                  and innovative strategies. Our digital marketing services are
+                  designed to engage your audience and drive measurable results
                 </p>
               </div>
             </div>
@@ -335,9 +335,10 @@ export default function Home() {
               <div className="our__services-text-content">
                 <span> Video Editing</span>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis autem eius eveniet libero unde quia deserunt
-                  aspernatur modi. Exercitationem, praesentium!
+                  Transform raw footage into captivating stories with our expert
+                  video editing services. We create visually stunning and
+                  impactful videos that leave a lasting impression on your
+                  audience.
                 </p>
               </div>
             </div>

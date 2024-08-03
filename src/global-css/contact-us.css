@@ -318,17 +318,7 @@ body {
   }
   .our__services-cards p {
     @apply sm:text-xs text-[0.6rem];
-  }
-  /* our client section starts form here */
-
-  .query__section {
-    @apply flex flex-col mt-40 content-center  text-5xl font-bold text-center;
-  }
-  .query__section h2 {
-    @apply text-5xl mb-60 uppercase font-bold text-center;
-  }
-  .query__section button {
-    @apply text-3xl w-fit uppercase rounded-full font-semibold mx-auto px-44 py-12 text-center;
+    line-height: 1.3rem;
   }
 
   /* FOOTER */

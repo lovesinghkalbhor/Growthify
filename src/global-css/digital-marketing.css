@@ -156,39 +156,6 @@ body {
     ************************************************************************
     ************************************************************************ */
 
-  .moving__strip {
-    @apply flex md:space-x-16 sm:space-x-10 xs:space-x-6 space-x-3    text-white py-4
-    align-middle rotate-0 z-[200];
-  }
-  .moving__strip span {
-    @apply xs:text-3xl text-2xl   md:text-4xl  lg:text-5xl  text-nowrap font-medium tracking-wider;
-  }
-  .moving__strip :nth-child(2n) {
-    color: #ef4444;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-  }
-  .moving__strip_left {
-    @apply absolute left-0 top-0   sm:w-32 w-20 h-full;
-    z-index: 999;
-    background: rgb(68, 68, 68);
-    background: linear-gradient(
-      266deg,
-      rgba(68, 68, 68, 0) 0%,
-      rgba(0, 0, 0, 1) 75%
-    );
-  }
-  .moving__strip_right {
-    @apply absolute right-0 top-0   sm:w-32 w-20 h-full;
-    z-index: 999;
-    background: rgb(68, 68, 68);
-    background: linear-gradient(
-      93deg,
-      rgba(68, 68, 68, 0) 0%,
-      rgba(0, 0, 0, 1) 75%
-    );
-  }
-
   /* ABOUT SECTION CSS STARTS HERE */
   /* 
     ************************************************************************
@@ -234,15 +201,11 @@ body {
       background-color: rgb(255, 255, 255);
     }
   }
-  /* .about__us .section__heading {
-    @apply lg:text-black text-white md:text-[2.6rem] sm:text-4xl xs:text-3xl text-2xl md:tracking-[0.2rem] tracking-[0.2rem];
-  } */
+
   .about__us .section__heading {
     @apply text-black  md:text-[2.3rem]  lg:text-[2.6rem] sm:text-4xl xs:text-3xl text-2xl md:tracking-[0.2rem] tracking-[0.2rem];
   }
-  /* .about__us hr {
-    @apply lg:bg-black bg-white;
-  } */
+
   .about__us hr {
     @apply bg-black;
   }
@@ -253,12 +216,6 @@ body {
     @apply lg:w-1/2  w-screen z-0 hidden lg:block lg:relative;
   }
 
-  /* .about__us-text-container h2 {
-     @apply md:text-2xl lg:text-black text-white md:max-w-[70%] text-2xl tracking-wide md:w-full sm:w-9/12 xs:w-9/12 lg:leading-[2rem] font-bold capitalize;
-
-     @apply mb-6;
-  } */
-
   .about__us-text-container h2 {
     /* for font */
     @apply md:text-3xl sm:text-2xl xs:text-3xl text-black  md:max-w-[70%] text-2xl tracking-wide md:w-full sm:w-9/12 xs:w-9/12 lg:leading-[2rem] font-bold capitalize;
@@ -266,10 +223,7 @@ body {
     /* for spacing */
     @apply mb-6;
   }
-  /* .about__us-text-container p {
-    @apply text-sm lg:text-black text-white md:text-sm;
-    @apply mb-16;
-  } */
+
   .about__us-text-container p {
     @apply text-sm text-black md:text-sm font-medium;
     @apply mb-16 max-w-lg;
@@ -291,106 +245,6 @@ body {
     @apply text-[2.5rem] font-bold mb-1;
   }
   .about__us-card :last-child {
-    @apply text-sm font-normal mb-1;
-  }
-
-  /* MORE ABOUT US SECTION CSS STARTS HERE */
-  /* 
-    ************************************************************************
-    ************************************************************************
-    ************************************************************************
-    ************************************************************************ */
-  .more_about_us .about__us {
-    @apply md:h-full sm:h-[40rem] h-fit sm:p-10 p-5 md:p-0;
-    background-image: url("/images/about-us.png");
-    background-size: cover; /* Option: Adjust image size and positioning */
-    background-repeat: no-repeat; /* Prevent image repetition */
-    background-position: center;
-    color: black;
-  }
-  .more_about_us .about__us:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    background-color: rgb(0, 0, 0); /* Adjust opacity for desired dimness */
-  }
-  @media (min-width: 1024px) {
-    /* Adjust breakpoint as needed */
-    .about__us {
-      background-image: none;
-    }
-    .about__us:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-      background-color: rgb(255, 255, 255);
-    }
-  }
-  /* .about__us .section__heading {
-    @apply lg:text-black text-white md:text-[2.6rem] sm:text-4xl xs:text-3xl text-2xl md:tracking-[0.2rem] tracking-[0.2rem];
-  } */
-  .more_about_us .about__us .section__heading {
-    @apply text-white  md:text-[2.3rem]  lg:text-[2.6rem] sm:text-4xl xs:text-3xl text-2xl md:tracking-[0.2rem] tracking-[0.2rem];
-  }
-  /* .about__us hr {
-    @apply lg:bg-black bg-white;
-  } */
-  .more_about_us .about__us hr {
-    @apply bg-white;
-  }
-  .more_about_us .about__us-text-container {
-    @apply lg:pl-10 md:px-10 lg:px-0 z-10;
-  }
-  .more_about_us .about__us-image-container {
-    @apply lg:w-1/2  w-screen z-0 hidden lg:block lg:relative;
-  }
-
-  /* .about__us-text-container h2 {
-     @apply md:text-2xl lg:text-black text-white md:max-w-[70%] text-2xl tracking-wide md:w-full sm:w-9/12 xs:w-9/12 lg:leading-[2rem] font-bold capitalize;
-
-     @apply mb-6;
-  } */
-
-  .more_about_us .about__us-text-container h2 {
-    /* for font */
-    @apply md:text-3xl sm:text-2xl xs:text-3xl text-white  md:max-w-[70%] text-2xl tracking-wide md:w-full sm:w-9/12 xs:w-9/12 lg:leading-[2rem] font-bold capitalize;
-
-    /* for spacing */
-    @apply mb-6;
-  }
-  /* .about__us-text-container p {
-    @apply text-sm lg:text-black text-white md:text-sm;
-    @apply mb-16;
-  } */
-  .more_about_us .about__us-text-container p {
-    @apply text-sm text-white md:text-sm font-medium;
-    @apply mb-16 max-w-lg;
-  }
-  .more_about_us .about__us-text-container {
-    @apply text-sm;
-  }
-
-  .more_about_us .about__us-card-container {
-    @apply pl-20  w-1/2;
-  }
-  .more_about_us .about__us-card {
-    @apply flex flex-col items-center py-10 px-10 w-60;
-    background-color: var(--primary-color);
-    color: white;
-    border-radius: 1rem;
-  }
-  .more_about_us .about__us-card :first-child {
-    @apply text-[2.5rem] font-bold mb-1;
-  }
-  .more_about_us .about__us-card :last-child {
     @apply text-sm font-normal mb-1;
   }
 
@@ -451,73 +305,11 @@ body {
   }
   .our__services-cards p {
     @apply sm:text-xs text-[0.6rem];
+    line-height: 1.3rem;
   }
   /* .our__services-cards:hover {
     border: 1px solid rgb(255, 115, 0);
   } */
-
-  /* our client section starts form here */
-
-  .vertical__strip {
-    @apply flex space-x-16  text-white py-4
-    align-middle mt-60 mb-24;
-  }
-  .vertical__strip span {
-    @apply text-7xl text-nowrap font-medium tracking-wider;
-  }
-  .vertical__strip :nth-child(2n) {
-    /* @apply border-2 border-red-600; */
-    color: #ef4444;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-  }
-  .our__clients {
-  }
-  .our__client-cards {
-    background-color: rgba(255, 255, 255, 0.059);
-    width: 100%;
-    padding: 3rem 2rem;
-    backdrop-filter: blur(15px) !important;
-    position: relative;
-    z-index: 100;
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.24);
-    /* height: 19rem; */
-    @apply sm:h-72 h-64;
-  }
-  .our__client-cards .our__client-cards-imageContainer img {
-    @apply w-6;
-  }
-  .our__clients .our__clients-background-light {
-    width: 100%;
-  }
-  .our__client-cards .our__client-cards-imageContainer {
-    @apply space-x-1;
-    display: flex;
-  }
-  .our__client-text-content {
-    @apply sm:mt-10 mt-6 space-y-3;
-  }
-  .our__client-cards span {
-    @apply sm:text-xl xs:text-base font-bold;
-  }
-  .our__client-cards p {
-    @apply sm:text-xs text-[0.6rem];
-  }
-  .our__client-cards:hover {
-    /* border: 1px solid rgb(255, 115, 0); */
-    border: 1px solid #7114c8;
-  }
-
-  .query__section {
-    @apply flex flex-col mt-40 content-center  text-5xl font-bold text-center;
-  }
-  .query__section h2 {
-    @apply text-5xl mb-60 uppercase font-bold text-center;
-  }
-  .query__section button {
-    @apply text-3xl w-fit uppercase rounded-full font-semibold mx-auto px-44 py-12 text-center;
-  }
 
   .zic-zac-text {
     @apply sm:space-y-32 space-y-24;
@@ -532,6 +324,8 @@ body {
     @apply lg:text-sm  text-xs font-light;
   }
 
+  /* big cards starts from here */
+
   .orange__big-card-container {
     @apply grid gap-28 p-20 px-10 pt-5 lg:w-1/2 justify-items-center mx-auto;
   }
@@ -542,7 +336,7 @@ body {
     @apply lg:text-3xl sm:text-2xl  font-semibold;
   }
   .orange__big-card p {
-    @apply font-light sm:text-sm  text-xs sm:leading-5;
+    @apply font-light sm:text-sm  text-xs leading-5;
   }
 
   /* FOOTER */
