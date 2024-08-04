@@ -1,12 +1,13 @@
 "use client";
 import "@/global-css/home.css";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
 import { motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import Footer from "@/custom_components/footer";
 const about_us_heading = "ABOUT US";
 const our_services_heading = "OUR SERVICES";
-const hero_heading = "WE ARE GROWTHIFY SERVICES ONLINE BUSINESS SOLUTION";
 const our_client_heading = "OUR CLIENT";
 const hero_para =
   "We help your business to grow online with minimal efforts and helps you to grow your business";
@@ -153,8 +154,9 @@ export default function Home() {
           className="object-cover absolute h-full w-full"
           src="/images/hero-workers-background-image.png"
           // fill={true}
-          width={400}
-          height={200}
+          width={200}
+          height={100}
+          quality={50}
         ></Image>
 
         <header className="mx-auto md:max-w-3xl sm:max-w-xl  max-w-lg">
@@ -265,6 +267,7 @@ export default function Home() {
               className="pl-10 w-full ml-auto z-10 absolute"
               src="/images/about-us.png"
               fill={true}
+              quality={30}
             ></Image>
           </div>
           <div className="lg:w-1/2 z-50 sm:mb-32 mb-24">
@@ -346,6 +349,7 @@ export default function Home() {
                   src="/images/web_development.png"
                   width={50}
                   height={50}
+                  quality={30}
                 ></Image>{" "}
                 <div className="our__services-text-content">
                   <span> Web Development</span>
@@ -363,6 +367,7 @@ export default function Home() {
                   src="/images/digital_marketing.png"
                   width={50}
                   height={50}
+                  quality={30}
                 ></Image>{" "}
                 <div className="our__services-text-content">
                   <span> Digital marketing</span>
@@ -379,6 +384,7 @@ export default function Home() {
                   src="/images/video-editing.png"
                   width={50}
                   height={50}
+                  quality={30}
                 ></Image>{" "}
                 <div className="our__services-text-content">
                   <span>Video Editing</span>
@@ -647,26 +653,31 @@ export default function Home() {
                   src="/images/star-Filled.png"
                   width={100}
                   height={100}
+                  quality={30}
                 ></Image>{" "}
                 <Image
                   src="/images/star-Filled.png"
                   width={100}
                   height={100}
+                  quality={30}
                 ></Image>{" "}
                 <Image
                   src="/images/star-Filled.png"
                   width={100}
                   height={100}
+                  quality={30}
                 ></Image>{" "}
                 <Image
                   src="/images/star-half.png"
                   width={100}
                   height={100}
+                  quality={30}
                 ></Image>{" "}
                 <Image
                   src="/images/star-empty.png"
                   width={100}
                   height={100}
+                  quality={30}
                 ></Image>{" "}
               </div>
               <div className="our__client-text-content">
@@ -684,26 +695,31 @@ export default function Home() {
                   src="/images/star-Filled.png"
                   width={100}
                   height={100}
+                  quality={30}
                 ></Image>{" "}
                 <Image
                   src="/images/star-Filled.png"
                   width={100}
                   height={100}
+                  quality={30}
                 ></Image>{" "}
                 <Image
                   src="/images/star-Filled.png"
                   width={100}
                   height={100}
+                  quality={30}
                 ></Image>{" "}
                 <Image
                   src="/images/star-half.png"
                   width={100}
                   height={100}
+                  quality={30}
                 ></Image>{" "}
                 <Image
                   src="/images/star-empty.png"
                   width={100}
                   height={100}
+                  quality={30}
                 ></Image>{" "}
               </div>
               <div className="our__client-text-content">
@@ -721,26 +737,31 @@ export default function Home() {
                   src="/images/star-Filled.png"
                   width={100}
                   height={100}
+                  quality={30}
                 ></Image>{" "}
                 <Image
                   src="/images/star-Filled.png"
                   width={100}
                   height={100}
+                  quality={30}
                 ></Image>{" "}
                 <Image
                   src="/images/star-Filled.png"
                   width={100}
                   height={100}
+                  quality={30}
                 ></Image>{" "}
                 <Image
                   src="/images/star-half.png"
                   width={100}
                   height={100}
+                  quality={30}
                 ></Image>{" "}
                 <Image
                   src="/images/star-empty.png"
                   width={100}
                   height={100}
+                  quality={30}
                 ></Image>{" "}
               </div>
               <div className="our__client-text-content">

@@ -1,7 +1,10 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [open, setopen] = useState(false);
   return (
     <>
       <div className="w-full absolute  z-[1000] overflow-visible">
@@ -18,6 +21,7 @@ export default function Navbar() {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
+              onClick={() => setopen(true)}
             >
               <path
                 strokeLinecap="round"
@@ -26,8 +30,15 @@ export default function Navbar() {
                 d="M4 6h16M4 12h8m-8 6h16"
               />
             </svg>
-            <div className="  group-hover:translate-x-0 -translate-x-full transition-all duration-300 text-left w-64 h-dvh   text-black text-lg  font-semibold bg-white fixed z-30 top-0 left-0 py-8 px-6">
-              <button className="ml-auto block mb-7 group-hover:-translate-x-full">
+            <div
+              className={`   ${
+                open ? "translate-x-0" : " -translate-x-full"
+              } transition-all duration-300 text-left w-64 h-dvh   text-black text-lg  font-semibold bg-white fixed z-30 top-0 left-0 py-6 px-6`}
+            >
+              <button
+                className="ml-auto block mb-7 p-3"
+                onClick={() => setopen(false)}
+              >
                 <Image src={"/images/close.png"} width={12} height={12}></Image>
               </button>
               <ul className="space-y-6">
