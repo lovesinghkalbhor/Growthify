@@ -3,6 +3,7 @@ import "@/global-css/digital-marketing.css";
 import Footer from "@/custom_components/footer";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Home() {
   // animation for cards
@@ -51,8 +52,8 @@ export default function Home() {
                 whileInView="show"
                 transition={{ staggerChildren: 0.02 }}
               >
-                {stringToCharArray("DIGITAL MARKETING").map((char) => (
-                  <motion.span key={char} variants={text_reveal}>
+                {stringToCharArray("DIGITAL MARKETING").map((char, index) => (
+                  <motion.span key={index} variants={text_reveal}>
                     {char}
                   </motion.span>
                 ))}
@@ -66,8 +67,8 @@ export default function Home() {
               >
                 {stringToCharArray(
                   "We help your business to grow online with minimal efforts and helps you to grow your business"
-                ).map((char) => (
-                  <motion.span key={char} variants={text_reveal}>
+                ).map((char, index) => (
+                  <motion.span key={index} variants={text_reveal}>
                     {char}
                   </motion.span>
                 ))}
@@ -75,12 +76,18 @@ export default function Home() {
             </div>
 
             <div className="hero__button__container  ">
-              <button className="sm:orange__button-large orange__button-md  lg:mr-12 sm:mr-8 mr-3">
+              <Link
+                href={"contact-us"}
+                className="sm:orange__button-large orange__button-md  lg:mr-12 sm:mr-8 mr-3"
+              >
                 Contact Us
-              </button>
-              <button className="sm:transparent__button-large transparent__button-md ">
+              </Link>
+              <Link
+                href={"/home#portfolio"}
+                className="sm:transparent__button-large transparent__button-md "
+              >
                 Check our Portfolio
-              </button>
+              </Link>
             </div>
           </div>
         </header>
@@ -103,9 +110,9 @@ export default function Home() {
                   whileInView="show"
                   transition={{ staggerChildren: 0.1 }}
                 >
-                  {stringToCharArray("ABOUT US").map((char) => (
+                  {stringToCharArray("ABOUT US").map((char, index) => (
                     <motion.span
-                      key={char}
+                      key={index}
                       variants={text_reveal}
                       transition={{ duration: 0.2 }}
                     >
@@ -131,9 +138,12 @@ export default function Home() {
                 landscape. Elevate your brand’s online presence with the best
                 digital marketing agency in india
               </p>
-              <button className="sm:orange__button-large orange__button-md  lg:mr-12 sm:mr-8 mr-3 text-white">
-                Contact Us
-              </button>
+              <Link
+                href={"/about"}
+                className="sm:orange__button-large orange__button-md  lg:mr-12 sm:mr-8 mr-3 text-white"
+              >
+                Learn more
+              </Link>
             </div>
             {/* <div className="md:flex hidden flex-row-reverse  pb-60">
               <div className="about__us-card-container w-1/2 grid grid-cols-2 gap-8 gap-x-0">

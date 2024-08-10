@@ -345,7 +345,7 @@ body {
     @apply sm:text-xl font-bold xs:text-lg;
   }
   .our__services-cards p {
-    @apply sm:text-xs text-[0.6rem];
+    @apply sm:text-sm text-[0.6rem] font-light;
     line-height: 1.3rem;
   }
   .our__services-cards:hover {
@@ -440,9 +440,10 @@ body {
     @apply sm:text-xl xs:text-base font-bold;
   }
   .our__client-cards p {
-    @apply sm:text-xs text-[0.6rem];
+    @apply sm:text-sm text-[0.6rem] font-light;
     line-height: 1.3rem;
   }
+
   .our__client-cards:hover {
     border: 1px solid rgb(255, 115, 0);
   }

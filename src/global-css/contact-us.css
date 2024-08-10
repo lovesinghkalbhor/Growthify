@@ -317,7 +317,7 @@ body {
     @apply sm:text-xl font-bold xs:text-lg;
   }
   .our__services-cards p {
-    @apply sm:text-xs text-[0.6rem];
+    @apply sm:text-sm text-[0.6rem] font-light;
     line-height: 1.3rem;
   }
 

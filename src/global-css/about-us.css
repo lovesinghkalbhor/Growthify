@@ -320,7 +320,7 @@ body {
 
   .more_about_us .about__us-text-container h2 {
     /* for font */
-    @apply md:text-3xl sm:text-2xl xs:text-3xl text-white  md:max-w-[70%] text-2xl tracking-wide md:w-full sm:w-9/12 xs:w-9/12 lg:leading-[2rem] font-bold capitalize;
+    @apply md:text-3xl sm:text-2xl xs:text-3xl text-white  md:max-w-[70%] text-2xl tracking-wide md:w-full sm:w-9/12 xs:w-9/12 lg:leading-[2.5rem] font-bold capitalize;
 
     /* for spacing */
     @apply mb-6;
@@ -402,7 +402,7 @@ body {
     @apply sm:text-xl font-bold xs:text-lg;
   }
   .our__services-cards p {
-    @apply sm:text-xs text-[0.6rem];
+    @apply sm:text-sm text-[0.6rem] font-light;
     line-height: 1.3rem;
   }
   .our__services-cards:hover {

@@ -304,7 +304,7 @@ body {
     @apply sm:text-xl font-bold xs:text-lg;
   }
   .our__services-cards p {
-    @apply sm:text-xs text-[0.6rem];
+    @apply sm:text-sm text-[0.6rem] font-light;
     line-height: 1.3rem;
   }
   /* .our__services-cards:hover {
@@ -336,7 +336,7 @@ body {
     @apply lg:text-3xl sm:text-2xl  font-semibold;
   }
   .orange__big-card p {
-    @apply font-light sm:text-sm  text-xs leading-5;
+    @apply font-light sm:text-base  text-xs leading-5;
   }
 
   /* FOOTER */

@@ -42,23 +42,23 @@ export default function Navbar() {
                 <Image src={"/images/close.png"} width={12} height={12}></Image>
               </button>
               <ul className="space-y-6">
-                <li>
+                <li role="button" onClick={() => setopen(false)}>
                   <Link href="/home">HOME</Link>
                 </li>
-                <li>
+                <li role="button" onClick={() => setopen(false)}>
                   <Link href="/about">ABOUT US</Link>
                 </li>
-                <li>
+                <li role="button" onClick={() => setopen(false)}>
                   <Link href="/digital-marketing" className="block">
                     DIGITAL MARKETING
                   </Link>
                 </li>
-                <li>
+                <li role="button" onClick={() => setopen(false)}>
                   <Link href="/web-dev" className="block">
                     WEB DEVELOPMENT{" "}
                   </Link>
                 </li>
-                <li>
+                <li role="button" onClick={() => setopen(false)}>
                   <Link href="/contact-us">CONTACT US</Link>
                 </li>
               </ul>
@@ -102,7 +102,7 @@ export default function Navbar() {
           </div> */}
         </nav>
         <div className="h-7 z-10 flex items-center bg-white w-fit sm:px-6 rounded-e-full sticky top-0">
-          <div className=" text-black flex sm:text-xs text-xs py-1 font-semibold space-x-7 px-5">
+          <div className=" text-black flex lg:text-sm  text-xs py-1 font-semibold space-x-7 px-5">
             <a
               href={"tel:+91-9340233410"}
               className="flex justify-center items-center hover:text-orange-600 "

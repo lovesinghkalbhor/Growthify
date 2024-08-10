@@ -5,6 +5,7 @@ import Footer from "@/custom_components/footer";
 import Image from "next/image";
 import Carousel from "@/custom_components/carousel";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Home() {
   const carousel_image = [
@@ -61,8 +62,8 @@ export default function Home() {
                 transition={{ staggerChildren: 0.02 }}
               >
                 {stringToCharArray("Web Design and Development Services").map(
-                  (char) => (
-                    <motion.span key={char} variants={text_reveal}>
+                  (char, index) => (
+                    <motion.span key={index} variants={text_reveal}>
                       {char}
                     </motion.span>
                   )
@@ -77,8 +78,8 @@ export default function Home() {
               >
                 {stringToCharArray(
                   "Growthify is a top custom web development company in India providing a wide range of website services. "
-                ).map((char) => (
-                  <motion.span key={char} variants={text_reveal}>
+                ).map((char, index) => (
+                  <motion.span key={index} variants={text_reveal}>
                     {char}
                   </motion.span>
                 ))}
@@ -86,12 +87,18 @@ export default function Home() {
             </div>
 
             <div className="hero__button__container  ">
-              <button className="sm:orange__button-large orange__button-md  lg:mr-12 sm:mr-8 mr-3">
+              <Link
+                href={"contact-us"}
+                className="sm:orange__button-large orange__button-md  lg:mr-12 sm:mr-8 mr-3"
+              >
                 Contact Us
-              </button>
-              <button className="sm:transparent__button-large transparent__button-md ">
+              </Link>
+              <Link
+                href={"/home#portfolio"}
+                className="sm:transparent__button-large transparent__button-md "
+              >
                 Check our Portfolio
-              </button>
+              </Link>
             </div>
           </div>
         </header>
@@ -114,9 +121,9 @@ export default function Home() {
                   whileInView="show"
                   transition={{ staggerChildren: 0.1 }}
                 >
-                  {stringToCharArray("ABOUT US").map((char) => (
+                  {stringToCharArray("ABOUT US").map((char, index) => (
                     <motion.span
-                      key={char}
+                      key={index}
                       variants={text_reveal}
                       transition={{ duration: 0.2 }}
                     >
@@ -135,9 +142,12 @@ export default function Home() {
                 developers carefully study your business challenges to create
                 websites that match your needs perfectly.
               </p>
-              <button className="sm:orange__button-large orange__button-md  lg:mr-12 sm:mr-8 mr-3 text-white">
-                Contact Us
-              </button>
+              <Link
+                href={"/about"}
+                className="sm:orange__button-large orange__button-md  lg:mr-12 sm:mr-8 mr-3 text-white"
+              >
+                Learn more
+              </Link>
             </div>
             {/* <div className="md:flex hidden flex-row-reverse  pb-60">
               <div className="about__us-card-container w-1/2 grid grid-cols-2 gap-8 gap-x-0">

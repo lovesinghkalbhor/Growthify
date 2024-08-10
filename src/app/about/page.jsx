@@ -3,6 +3,7 @@ import "@/global-css/about-us.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Footer from "@/custom_components/footer";
+import Link from "next/link";
 
 export default function Home() {
   // animation for cards
@@ -51,8 +52,8 @@ export default function Home() {
                 whileInView="show"
                 transition={{ staggerChildren: 0.02 }}
               >
-                {stringToCharArray("ABOUT US").map((char) => (
-                  <motion.span key={char} variants={text_reveal}>
+                {stringToCharArray("ABOUT US").map((char, index) => (
+                  <motion.span key={index} variants={text_reveal}>
                     {char}
                   </motion.span>
                 ))}
@@ -66,8 +67,8 @@ export default function Home() {
               >
                 {stringToCharArray(
                   "We specialize in crafting exceptional digital solutions. From websites to marketing strategies, we help businesses thrive online"
-                ).map((char) => (
-                  <motion.span key={char} variants={text_reveal}>
+                ).map((char, index) => (
+                  <motion.span key={index} variants={text_reveal}>
                     {char}
                   </motion.span>
                 ))}
@@ -75,12 +76,18 @@ export default function Home() {
             </div>
 
             <div className="hero__button__container  ">
-              <button className="sm:orange__button-large orange__button-md  lg:mr-12 sm:mr-8 mr-3">
+              <Link
+                href={"contact-us"}
+                className="sm:orange__button-large orange__button-md  lg:mr-12 sm:mr-8 mr-3"
+              >
                 Contact Us
-              </button>
-              <button className="sm:transparent__button-large transparent__button-md ">
+              </Link>
+              <Link
+                href={"/home#portfolio"}
+                className="sm:transparent__button-large transparent__button-md "
+              >
                 Check our Portfolio
-              </button>
+              </Link>
             </div>
           </div>
         </header>
@@ -103,9 +110,9 @@ export default function Home() {
                   whileInView="show"
                   transition={{ staggerChildren: 0.1 }}
                 >
-                  {stringToCharArray("Who We Are").map((char) => (
+                  {stringToCharArray("Who We Are").map((char, index) => (
                     <motion.span
-                      key={char}
+                      key={index}
                       variants={text_reveal}
                       transition={{ duration: 0.2 }}
                     >
@@ -137,30 +144,13 @@ export default function Home() {
                 digital transformation. Experience the difference with India's
                 premier software experts at Super Geeks Soft Tech.
               </p>
-              <button className="sm:orange__button-large orange__button-md  lg:mr-12 sm:mr-8 mr-3 text-white">
-                Contact Us
-              </button>
+              <Link
+                href={"/about"}
+                className="sm:orange__button-large orange__button-md  lg:mr-12 sm:mr-8 mr-3 text-white"
+              >
+                Learn more
+              </Link>
             </div>
-            {/* <div className="md:flex hidden flex-row-reverse  pb-60">
-              <div className="about__us-card-container w-1/2 grid grid-cols-2 gap-8 gap-x-0">
-                <div className="about__us-card">
-                  <span>10 +</span>
-                  <span>Completed Projects</span>
-                </div>
-                <div className="about__us-card">
-                  <span>100 +</span>
-                  <span>Completed Projects</span>
-                </div>
-                <div className="about__us-card">
-                  <span>10 +</span>
-                  <span> projects</span>
-                </div>
-                <div className="about__us-card">
-                  <span>10 +</span>
-                  <span>projects</span>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </section>
@@ -221,9 +211,9 @@ export default function Home() {
                   whileInView="show"
                   transition={{ staggerChildren: 0.1 }}
                 >
-                  {stringToCharArray("Our Value").map((char) => (
+                  {stringToCharArray("Our Value").map((char, index) => (
                     <motion.span
-                      key={char}
+                      key={index}
                       variants={text_reveal}
                       transition={{ duration: 0.2 }}
                     >
@@ -248,9 +238,6 @@ export default function Home() {
                 person’s contribution, which leads to collective success and
                 growth at SuperGeeks Soft Tech.
               </p>
-              <button className="sm:orange__button-large orange__button-md  lg:mr-12 sm:mr-8 mr-3 text-white">
-                Contact Us
-              </button>
             </div>
             {/* <div className="md:flex hidden flex-row-reverse  pb-60">
               <div className="about__us-card-container w-1/2 grid grid-cols-2 gap-8 gap-x-0">
@@ -295,7 +282,10 @@ export default function Home() {
             viewport={{ amount: 0.1 }}
             className="our__services-cards-container grid lg:grid-cols-3 sm:grid-cols-2  gap-8 p-20 px-10 pt-5 lg:w-11/12 md:w-11/12 justify-items-end mx-auto"
           >
-            <div className="our__services-cards relative z-10">
+            <Link
+              href={"web-dev"}
+              className="our__services-cards relative z-10"
+            >
               <Image
                 src="/images/web_development.png"
                 width={50}
@@ -310,8 +300,11 @@ export default function Home() {
                   our experts create enthralling websites for your business.
                 </p>
               </div>
-            </div>
-            <div className="our__services-cards relative z-10">
+            </Link>
+            <Link
+              href={"digital-marketing"}
+              className="our__services-cards relative z-10"
+            >
               <Image
                 src="/images/digital_marketing.png"
                 width={50}
@@ -325,8 +318,8 @@ export default function Home() {
                   designed to engage your audience and drive measurable results
                 </p>
               </div>
-            </div>
-            <div className="our__services-cards relative z-10">
+            </Link>
+            <Link href={""} className="our__services-cards relative z-10">
               <Image
                 src="/images/video-editing.png"
                 width={50}
@@ -341,7 +334,7 @@ export default function Home() {
                   audience.
                 </p>
               </div>
-            </div>
+            </Link>
           </motion.div>
         </section>
       </div>

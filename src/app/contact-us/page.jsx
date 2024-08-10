@@ -3,6 +3,7 @@ import "@/global-css/contact-us.css";
 import Footer from "@/custom_components/footer";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Home() {
   // animation for cards
@@ -51,8 +52,8 @@ export default function Home() {
                 whileInView="show"
                 transition={{ staggerChildren: 0.02 }}
               >
-                {stringToCharArray("CONTACT US").map((char) => (
-                  <motion.span key={char} variants={text_reveal}>
+                {stringToCharArray("CONTACT US").map((char, index) => (
+                  <motion.span key={index} variants={text_reveal}>
                     {char}
                   </motion.span>
                 ))}
@@ -66,8 +67,8 @@ export default function Home() {
               >
                 {stringToCharArray(
                   "We're here to assist you! Have questions, need more information, or ready to start a project? Reach out to us using the contact form below or through the provided details."
-                ).map((char) => (
-                  <motion.span key={char} variants={text_reveal}>
+                ).map((char, index) => (
+                  <motion.span key={index} variants={text_reveal}>
                     {char}
                   </motion.span>
                 ))}
@@ -75,12 +76,18 @@ export default function Home() {
             </div>
 
             <div className="hero__button__container  ">
-              <button className="sm:orange__button-large orange__button-md  lg:mr-12 sm:mr-8 mr-3">
+              <Link
+                href={"contact-us"}
+                className="sm:orange__button-large orange__button-md  lg:mr-12 sm:mr-8 mr-3"
+              >
                 Contact Us
-              </button>
-              <button className="sm:transparent__button-large transparent__button-md ">
+              </Link>
+              <Link
+                href={"/home#portfolio"}
+                className="sm:transparent__button-large transparent__button-md "
+              >
                 Check our Portfolio
-              </button>
+              </Link>
             </div>
           </div>
         </header>
@@ -176,9 +183,9 @@ export default function Home() {
                   whileInView="show"
                   transition={{ staggerChildren: 0.1 }}
                 >
-                  {stringToCharArray("SEND US A MESSAGE").map((char) => (
+                  {stringToCharArray("SEND US A MESSAGE").map((char, index) => (
                     <motion.span
-                      key={char}
+                      key={index}
                       variants={text_reveal}
                       transition={{ duration: 0.2 }}
                     >
