@@ -60,7 +60,10 @@ export default function WhatsApp() {
             <h1 className="mt-1 text-base">Chat on Whats</h1>
           </a>
         </div>
-        <div className="rounded-full hover:scale-110 duration-300 w-16 h-16 relative ml-auto ">
+        <div
+          role="button"
+          className="rounded-full hover:scale-110 duration-300 w-16 h-16 relative ml-auto "
+        >
           <div className="  z-10  w-3 h-3 rounded-full absolute bg-red-600  animate-ping top-1   right-2 "></div>
           <Image
             onClick={() => setopenWhatsapp(true)}
