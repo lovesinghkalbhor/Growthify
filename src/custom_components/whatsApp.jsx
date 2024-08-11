@@ -57,7 +57,7 @@ export default function WhatsApp() {
               width={20}
               height={20}
             ></Image>
-            <h1 className="mt-1 text-base">Chat on Whats</h1>
+            <h1 className="mt-1 text-base font-semibold">Chat on Whatsapp</h1>
           </a>
         </div>
         <div
