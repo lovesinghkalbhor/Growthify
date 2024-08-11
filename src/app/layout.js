@@ -6,6 +6,7 @@ import Navbar from "@/custom_components/navbar";
 import Contact_us_model from "@/custom_components/contact_usmodel";
 import Script from 'next/script';
 import { Montserrat } from 'next/font/google';
+import WhatsApp from "@/custom_components/whatsApp";
 
 const Montserrat_font = Montserrat({
   subsets: ["latin"],
@@ -49,13 +50,14 @@ export default function RootLayout({ children }) {
 
           {children}
         </div>
-        <Script
+        {/* <Script
           src="https://static.elfsight.com/platform/platform.js"
           strategy="afterInteractive" // Load after initial content is rendered
           defer // Defer execution until after content rendering
           data-use-service-core
         />
-        <div class="elfsight-app-0172c049-cb73-4637-b769-c915f236fc42" data-elfsight-app-lazy></div>
+        <div class="elfsight-app-0172c049-cb73-4637-b769-c915f236fc42" data-elfsight-app-lazy></div> */}
+        <WhatsApp></WhatsApp>
       </body>
     </html >
   );
