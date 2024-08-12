@@ -6,7 +6,7 @@ export default function Dashboard() {
   return (
     <div className="sm:w-1/2 w-4/5 h-fit">
       <Image
-        src="/images/portfolio/dashboard_long.png"
+        src="/images/portfolio/dashboard_short.png"
         width={1999}
         height={1000}
         quality={100}
