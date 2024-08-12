@@ -431,28 +431,7 @@ export default function Home() {
           <div className="space-y-10">
             <div className="portfolio-image-container">
               <Image
-                src="/images/portfolio_image.png"
-                width={300}
-                height={300}
-              ></Image>
-              <div className="portfolio-image-container-info">
-                <span> Web Development</span>
-                <div>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis autem eius eveniet libero unde quia deserunt
-                    aspernatur modi. Exercitationem, praesentium!
-                  </p>
-                  <button className="orange__button-large  mr-12">
-                    Contact Us
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div className="portfolio-image-container">
-              <Image
-                src="/images/short_portfolio_image.png"
+                src="/images/portfolio/digital_agency_short.png"
                 width={300}
                 height={100}
               ></Image>
@@ -464,9 +443,35 @@ export default function Home() {
                     Debitis autem eius eveniet libero unde quia deserunt
                     aspernatur modi. Exercitationem, praesentium!
                   </p>
-                  <button className="orange__button-large mr-12">
-                    Contact Us
-                  </button>
+                  <Link
+                    href={"portfolio_projects/digital_marketing"}
+                    className="orange__button-large mr-12"
+                  >
+                    Check
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="portfolio-image-container">
+              <Image
+                src="/images/portfolio/cloud_website_long.png"
+                width={300}
+                height={300}
+              ></Image>
+              <div className="portfolio-image-container-info">
+                <span>Cloud website</span>
+                <div>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Debitis autem eius eveniet libero unde quia deserunt
+                    aspernatur modi. Exercitationem, praesentium!
+                  </p>
+                  <Link
+                    href={"portfolio_projects/cloud_website"}
+                    className="orange__button-large  mr-12"
+                  >
+                    Check
+                  </Link>
                 </div>
               </div>
             </div>
@@ -474,7 +479,7 @@ export default function Home() {
           <div className="space-y-10">
             <div className="portfolio-image-container">
               <Image
-                src="/images/portfolio_image.png"
+                src="/images/portfolio/ride_now_long.png"
                 width={300}
                 height={300}
               ></Image>
@@ -486,16 +491,19 @@ export default function Home() {
                     Debitis autem eius eveniet libero unde quia deserunt
                     aspernatur modi. Exercitationem, praesentium!
                   </p>
-                  <button className="orange__button-large mr-12">
-                    Contact Us
-                  </button>
+                  <Link
+                    href={"portfolio_projects/ridenow_website"}
+                    className="orange__button-large mr-12"
+                  >
+                    Check
+                  </Link>
                 </div>
               </div>
             </div>
 
             <div className="portfolio-image-container">
               <Image
-                src="/images/short_portfolio_image.png"
+                src="/images/portfolio/coaching_website_short.png"
                 width={300}
                 height={300}
               ></Image>
@@ -507,9 +515,12 @@ export default function Home() {
                     Debitis autem eius eveniet libero unde quia deserunt
                     aspernatur modi. Exercitationem, praesentium!
                   </p>
-                  <button className="orange__button-large mr-12">
-                    Contact Us
-                  </button>
+                  <Link
+                    href={"portfolio_projects/coaching_website"}
+                    className="orange__button-large mr-12"
+                  >
+                    Check
+                  </Link>
                 </div>
               </div>
             </div>
@@ -517,7 +528,7 @@ export default function Home() {
           <div className="space-y-10  ">
             <div className="portfolio-image-container">
               <Image
-                src="/images/short_portfolio_image.png"
+                src="/images/portfolio/dashboard_short.png"
                 width={300}
                 height={300}
               ></Image>
@@ -529,16 +540,19 @@ export default function Home() {
                     Debitis autem eius eveniet libero unde quia deserunt
                     aspernatur modi. Exercitationem, praesentium!
                   </p>
-                  <button className="orange__button-large mr-12">
-                    Contact Us
-                  </button>
+                  <Link
+                    href={"portfolio_projects/dashboard"}
+                    className="orange__button-large mr-12"
+                  >
+                    Check
+                  </Link>
                 </div>
               </div>
             </div>
 
             <div className="portfolio-image-container">
               <Image
-                src="/images/portfolio_image.png"
+                src="/images/portfolio/coupons_long.png"
                 width={300}
                 height={300}
               ></Image>
@@ -550,9 +564,12 @@ export default function Home() {
                     Debitis autem eius eveniet libero unde quia deserunt
                     aspernatur modi. Exercitationem, praesentium!
                   </p>
-                  <button className="orange__button-large mr-12">
-                    Contact Us
-                  </button>
+                  <Link
+                    href={"portfolio_projects/coupons_website"}
+                    className="orange__button-large mr-12"
+                  >
+                    Check
+                  </Link>
                 </div>
               </div>
             </div>
