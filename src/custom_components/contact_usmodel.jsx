@@ -178,9 +178,9 @@ export default function ContactUsModal() {
                 <div className="col-span-2">
                   <div className="relative">
                     <input
+                      className="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-1 focus:ring-orange-500 focus:border-transparent"
                       type="text"
                       id="contact-form-name"
-                      className="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-1 focus:ring-orange-500 focus:border-transparent"
                       placeholder="Name"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
@@ -190,11 +190,11 @@ export default function ContactUsModal() {
                 <div className="col-span-2">
                   <div className="relative">
                     <input
-                      type="email"
-                      id="contact-form-email"
                       className={`rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-1 focus:ring-orange-500 focus:border-transparent ${
                         emailError && email != "" ? "border-red-500" : ""
                       }`}
+                      type="email"
+                      id="contact-form-email"
                       placeholder="Email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
@@ -209,11 +209,11 @@ export default function ContactUsModal() {
                 <div className="col-span-2">
                   <div className="relative">
                     <input
-                      type="tel"
-                      id="contact-form-phone"
                       className={`rounded-lg border-transparent flex-1 appearance-none border shadow-sm border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 text-base focus:outline-none focus:ring-1 focus:ring-orange-500 focus:border-transparent ${
                         phoneError && phone != "" ? "border-red-500" : ""
                       }`}
+                      type="tel"
+                      id="contact-form-phone"
                       placeholder="Phone no"
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}

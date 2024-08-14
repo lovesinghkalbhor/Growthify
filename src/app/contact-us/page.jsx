@@ -4,8 +4,59 @@ import Footer from "@/custom_components/footer";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+  const [isFormValid, setIsFormValid] = useState(false);
+  const [emailError, setEmailError] = useState("");
+  const [phoneError, setPhoneError] = useState("");
+
+  // Email and phone validation patterns
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const phonePattern = /^\d{10}$/; // Simple pattern for a 10-digit phone number
+
+  // Effect to validate the form whenever the input fields change
+  useEffect(() => {
+    const isEmailValid = emailPattern.test(email);
+    const isPhoneValid = phonePattern.test(phone);
+
+    setEmailError(isEmailValid ? "" : "Invalid email address");
+    setPhoneError(isPhoneValid ? "" : "Phone number must be 10 digits");
+
+    setIsFormValid(
+      name.trim() !== "" &&
+        email.trim() !== "" &&
+        isEmailValid &&
+        phone.trim() !== "" &&
+        isPhoneValid &&
+        message.trim() !== ""
+    );
+  }, [name, email, phone, message]);
+
+  // Handler for form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Construct the WhatsApp message link
+    const whatsappNumber = "918815152801"; // Replace with your WhatsApp number
+    const whatsappMessage = `Hello, my name is ${name}.\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`;
+    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+      whatsappMessage
+    )}`;
+
+    // Redirect to WhatsApp
+    window.open(whatsappLink, "_blank");
+
+    setEmail("");
+    setMessage("");
+    setName("");
+    setPhone("");
+  };
+
   // animation for cards
   const card_animation_parent = {
     hidden: { opacity: 0, translateX: -100 },
@@ -196,7 +247,7 @@ export default function Home() {
                 {/* <hr /> */}
               </div>
             </div>
-            <div className="about__us-text-container">
+            <form className="about__us-text-container" onSubmit={handleSubmit}>
               {/* <h2>
                 we are the team of expert digital marketers and web developers
               </h2>
@@ -214,10 +265,12 @@ export default function Home() {
                     Your Name
                   </span>
                   <input
-                    type="email"
-                    name="email"
-                    class="mt-1 px-3 py-2 lg:bg-white bg-transparent border-b-2  border-gray-800 placeholder-gray-800 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full   sm:text-sm focus:ring-1"
-                    placeholder="joy doe"
+                    class="mt-1 px-3 py-2 lg:bg-white bg-transparent border-b-2  border-gray-800 placeholder-gray-800 focus:outline-none  focus:ring-orange-500 block w-full   sm:text-sm focus:ring-1"
+                    type="text"
+                    id="contact-form-name"
+                    placeholder="Name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                   />
                 </label>
                 <label class="block max-w-96">
@@ -225,38 +278,63 @@ export default function Home() {
                     Your Email{" "}
                   </span>
                   <input
+                    class="mt-1 px-3 py-2 lg:bg-white bg-transparent border-b-2  border-gray-800 placeholder-gray-800 focus:outline-none   focus:ring-orange-500 block w-full   sm:text-sm focus:ring-1"
                     type="email"
-                    name="email"
-                    class="mt-1 px-3 py-2 lg:bg-white bg-transparent border-b-2  border-gray-800 placeholder-gray-800 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full   sm:text-sm focus:ring-1"
-                    placeholder="you@example.com"
+                    id="contact-form-email"
+                    placeholder="Email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
+                  {emailError && (
+                    <p className="text-red-500 text-sm">
+                      {email ? emailError : ""}
+                    </p>
+                  )}
                 </label>
                 <label class="block max-w-96">
                   <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-base font-medium text-black">
-                    Subject{" "}
+                    Phone{" "}
                   </span>
                   <input
-                    type="email"
-                    name="email"
-                    class="mt-1 px-3 py-2 lg:bg-white bg-transparent border-b-2  border-gray-800 placeholder-gray-800 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full   sm:text-sm focus:ring-1"
+                    class="mt-1 px-3 py-2 lg:bg-white bg-transparent border-b-2  border-gray-800 placeholder-gray-800 focus:outline-none   focus:ring-orange-500 block w-full   sm:text-sm focus:ring-1"
+                    type="tel"
+                    id="contact-form-phone"
+                    placeholder="Phone no"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
                   />
+                  {phoneError && (
+                    <p className="text-red-500 text-sm">
+                      {phone ? phoneError : ""}
+                    </p>
+                  )}
                 </label>
                 <label class="block max-w-96">
                   <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-base font-medium text-black">
                     Your Name
                   </span>
-                  <input
-                    type="email"
-                    name="email"
-                    class="mt-1 px-3 py-2 lg:bg-white bg-transparent border-b-2  border-gray-800 placeholder-gray-800 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full   sm:text-sm focus:ring-1"
-                    placeholder="you@example.com"
-                  />
+                  <textarea
+                    class="mt-1 px-3 py-2 lg:bg-white bg-transparent border-b-2  border-gray-800 placeholder-gray-800 focus:outline-none   focus:ring-orange-500 block w-full   sm:text-sm focus:ring-1"
+                    id="comment"
+                    placeholder="Enter your Message"
+                    name="comment"
+                    rows="5"
+                    cols="40"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                  ></textarea>
                 </label>
               </div>
-              <button className="sm:orange__button-large orange__button-md  lg:mr-12 sm:mr-8 mr-3 text-white">
-                Contact Us
+              <button
+                type="submit"
+                className={`sm:orange__button-large orange__button-md  lg:mr-12 sm:mr-8 mr-3 text-white ${
+                  !isFormValid ? "opacity-50 cursor-not-allowed" : ""
+                }`}
+                disabled={!isFormValid}
+              >
+                Send
               </button>
-            </div>
+            </form>
             {/* <div className="md:flex hidden flex-row-reverse  pb-60">
               <div className="about__us-card-container w-1/2 grid grid-cols-2 gap-8 gap-x-0">
                 <div className="about__us-card">
