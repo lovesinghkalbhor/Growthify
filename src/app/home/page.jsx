@@ -151,14 +151,14 @@ export default function Home() {
         </header>
       </div> */}
       <div className=" hero__container overflow-x-hidden relative z-60 sm:mb-10 xs:mb-20">
-        <Image
+        {/* <Image
           className="object-cover absolute h-full w-full"
           src="/images/hero-workers-background-image.png"
           // fill={true}
           width={200}
           height={100}
           quality={50}
-        ></Image>
+        ></Image> */}
 
         <header className="mx-auto md:max-w-3xl sm:max-w-xl  max-w-lg">
           <div className=" sm:my-44 sm:mt-52 my-28 mt-40 md:mx-16 text-center sm:mx-auto  mx-6 ">
