@@ -83,7 +83,7 @@ export default function Home() {
                 Contact Us
               </Link>
               <Link
-                href={"/home#portfolio"}
+                href={"/#portfolio"}
                 className="sm:transparent__button-large transparent__button-md "
               >
                 Check our Portfolio
@@ -239,26 +239,6 @@ export default function Home() {
                 growth at SuperGeeks Soft Tech.
               </p>
             </div>
-            {/* <div className="md:flex hidden flex-row-reverse  pb-60">
-              <div className="about__us-card-container w-1/2 grid grid-cols-2 gap-8 gap-x-0">
-                <div className="about__us-card">
-                  <span>10 +</span>
-                  <span>Completed Projects</span>
-                </div>
-                <div className="about__us-card">
-                  <span>100 +</span>
-                  <span>Completed Projects</span>
-                </div>
-                <div className="about__us-card">
-                  <span>10 +</span>
-                  <span> projects</span>
-                </div>
-                <div className="about__us-card">
-                  <span>10 +</span>
-                  <span>projects</span>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </section>
@@ -338,23 +318,6 @@ export default function Home() {
           </motion.div>
         </section>
       </div>
-
-      {/* <section className="portfolio__strip overflow-hidden mt-10">
-        <span>OUR</span>
-        <span>PORTFOLIO</span>
-        <span>OUR</span>
-        <span>DIGITAL MARKETING</span>
-        <span>WEB</span>
-        <span>DEVELOPMENT</span>
-      </section> */}
-
-      {/* <section className="query__section">
-        <h2>
-          {" "}
-          Have any project in <br></br>mind
-        </h2>
-        <button className="orange__button-large">Let's Talk</button>
-      </section> */}
 
       <Footer></Footer>
     </>

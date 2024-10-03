@@ -31,7 +31,7 @@ export default function Footer() {
               </div>
               <div className="grid lg:grid-cols-3 gap-10 ">
                 <Link
-                  href={"/home"}
+                  href={"/"}
                   className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase"
                 >
                   HOME

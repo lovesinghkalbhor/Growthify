@@ -134,7 +134,7 @@ export default function Home() {
                 Contact Us
               </Link>
               <Link
-                href={"/home#portfolio"}
+                href={"/#portfolio"}
                 className="sm:transparent__button-large transparent__button-md "
               >
                 Check our Portfolio
@@ -260,12 +260,12 @@ export default function Home() {
                 brightness and 1600
               </p> */}
               <div className="space-y-10 mb-20 ">
-                <label class="block max-w-96">
-                  <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-base font-medium text-black">
+                <label className="block max-w-96">
+                  <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-base font-medium text-black">
                     Your Name
                   </span>
                   <input
-                    class="mt-1 px-3 py-2 lg:bg-white bg-transparent border-b-2  border-gray-800 placeholder-gray-800 focus:outline-none  focus:ring-orange-500 block w-full   sm:text-sm focus:ring-1"
+                    className="mt-1 px-3 py-2 lg:bg-white bg-transparent border-b-2  border-gray-800 placeholder-gray-800 focus:outline-none  focus:ring-orange-500 block w-full   sm:text-sm focus:ring-1"
                     type="text"
                     id="contact-form-name"
                     placeholder="Name"
@@ -273,12 +273,12 @@ export default function Home() {
                     onChange={(e) => setName(e.target.value)}
                   />
                 </label>
-                <label class="block max-w-96">
-                  <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-base font-medium text-black">
+                <label className="block max-w-96">
+                  <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-base font-medium text-black">
                     Your Email{" "}
                   </span>
                   <input
-                    class="mt-1 px-3 py-2 lg:bg-white bg-transparent border-b-2  border-gray-800 placeholder-gray-800 focus:outline-none   focus:ring-orange-500 block w-full   sm:text-sm focus:ring-1"
+                    className="mt-1 px-3 py-2 lg:bg-white bg-transparent border-b-2  border-gray-800 placeholder-gray-800 focus:outline-none   focus:ring-orange-500 block w-full   sm:text-sm focus:ring-1"
                     type="email"
                     id="contact-form-email"
                     placeholder="Email"
@@ -291,12 +291,12 @@ export default function Home() {
                     </p>
                   )}
                 </label>
-                <label class="block max-w-96">
-                  <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-base font-medium text-black">
+                <label className="block max-w-96">
+                  <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-base font-medium text-black">
                     Phone{" "}
                   </span>
                   <input
-                    class="mt-1 px-3 py-2 lg:bg-white bg-transparent border-b-2  border-gray-800 placeholder-gray-800 focus:outline-none   focus:ring-orange-500 block w-full   sm:text-sm focus:ring-1"
+                    className="mt-1 px-3 py-2 lg:bg-white bg-transparent border-b-2  border-gray-800 placeholder-gray-800 focus:outline-none   focus:ring-orange-500 block w-full   sm:text-sm focus:ring-1"
                     type="tel"
                     id="contact-form-phone"
                     placeholder="Phone no"
@@ -309,12 +309,12 @@ export default function Home() {
                     </p>
                   )}
                 </label>
-                <label class="block max-w-96">
-                  <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-base font-medium text-black">
+                <label className="block max-w-96">
+                  <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-base font-medium text-black">
                     Your Name
                   </span>
                   <textarea
-                    class="mt-1 px-3 py-2 lg:bg-white bg-transparent border-b-2  border-gray-800 placeholder-gray-800 focus:outline-none   focus:ring-orange-500 block w-full   sm:text-sm focus:ring-1"
+                    className="mt-1 px-3 py-2 lg:bg-white bg-transparent border-b-2  border-gray-800 placeholder-gray-800 focus:outline-none   focus:ring-orange-500 block w-full   sm:text-sm focus:ring-1"
                     id="comment"
                     placeholder="Enter your Message"
                     name="comment"

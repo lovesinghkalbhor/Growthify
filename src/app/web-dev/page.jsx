@@ -6,6 +6,7 @@ import Image from "next/image";
 import Carousel from "@/custom_components/carousel";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import PricingCard from "@/custom_components/pricingCards";
 
 export default function Home() {
   const carousel_image = [
@@ -94,7 +95,7 @@ export default function Home() {
                 Contact Us
               </Link>
               <Link
-                href={"/home#portfolio"}
+                href={"/#portfolio"}
                 className="sm:transparent__button-large transparent__button-md "
               >
                 Check our Portfolio
@@ -149,26 +150,6 @@ export default function Home() {
                 Learn more
               </Link>
             </div>
-            {/* <div className="md:flex hidden flex-row-reverse  pb-60">
-              <div className="about__us-card-container w-1/2 grid grid-cols-2 gap-8 gap-x-0">
-                <div className="about__us-card">
-                  <span>10 +</span>
-                  <span>Completed Projects</span>
-                </div>
-                <div className="about__us-card">
-                  <span>100 +</span>
-                  <span>Completed Projects</span>
-                </div>
-                <div className="about__us-card">
-                  <span>10 +</span>
-                  <span> projects</span>
-                </div>
-                <div className="about__us-card">
-                  <span>10 +</span>
-                  <span>projects</span>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </section>
@@ -188,6 +169,87 @@ export default function Home() {
         <Carousel>{carousel_image}</Carousel>
       </section>
 
+      <section className="xl:container mx-auto lg:px-10 md:px-10 sm:px-10 ">
+        <div className="section__heading-bold">
+          <h1>Most Affordable pricing </h1>
+        </div>
+
+        <div className="grid justify-center lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-8 md:gap-8 gap-y-16 place-items-center">
+          <PricingCard
+            title={
+              <span>
+                Single page <br /> Website
+              </span>
+            }
+            pricing={"4,920"}
+            features={[
+              "1 Year Hosting + Domain + SSL  Certificate Free",
+              "25% OFF on hosting ",
+              "1 Business Email",
+              "1 Year Free Maintanance",
+              "Basic SEO",
+              "Performance Optimization",
+              "Custom Design & Development",
+              "Content Writing",
+            ]}
+          ></PricingCard>
+          <PricingCard
+            title={
+              <span>
+                {" "}
+                4 page <br /> Website
+              </span>
+            }
+            pricing={"6,599"}
+            features={[
+              "1 Year Hosting + Domain + SSL  Certificate Free",
+              "25% OFF on hosting ",
+              "3 Business Email",
+              "1 Year Free Maintanance",
+              "Basic SEO",
+              "Performance Optimization",
+              "Custom Design & Development",
+              "Content Writing",
+              "Free Google listing",
+            ]}
+          ></PricingCard>
+          <PricingCard
+            title={" Website Up to 10 pages"}
+            pricing={"8,999"}
+            features={[
+              "1 Year Hosting + Domain + SSL  Certificate Free",
+              "25% OFF on hosting ",
+              "3 Business Email",
+              "1 Year Free Maintanance",
+              "Basic SEO",
+              "Performance Optimization",
+              "Custom Design & Development",
+              "Content Writing",
+              "Free Google listing",
+              "24/7 Support",
+              "Rs 500 Per Page for extra pages",
+            ]}
+          ></PricingCard>
+          <PricingCard
+            title={"E-commerce Website"}
+            pricing={"11,999"}
+            features={[
+              "1 Year Hosting + Domain + SSL  Certificate Free",
+              "25% OFF on hosting ",
+              "5 Business Email",
+              "1 Year Free Maintanance",
+              "Basic SEO",
+              "Performance Optimization",
+              "Custom Design & Development",
+              "Content Writing",
+              "Free Google listing",
+              "24/7 Support",
+              "Payment integration",
+              "20 GB Storage for Products images",
+            ]}
+          ></PricingCard>
+        </div>
+      </section>
       {/* CONTACT DETAILS  */}
 
       <div id="our-services" className=" 2xl:container relative 2xl:mx-auto ">
@@ -427,23 +489,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* <section className="portfolio__strip overflow-hidden mt-10">
-        <span>OUR</span>
-        <span>PORTFOLIO</span>
-        <span>OUR</span>
-        <span>DIGITAL MARKETING</span>
-        <span>WEB</span>
-        <span>DEVELOPMENT</span>
-      </section> */}
-
-      {/* <section className="query__section">
-        <h2>
-          {" "}
-          Have any project in <br></br>mind
-        </h2>
-        <button className="orange__button-large">Let's Talk</button>
-      </section> */}
 
       <Footer></Footer>
     </>

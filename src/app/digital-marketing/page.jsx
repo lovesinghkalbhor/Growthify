@@ -4,6 +4,7 @@ import Footer from "@/custom_components/footer";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import PricingCard from "@/custom_components/pricingCards";
 
 export default function Home() {
   // animation for cards
@@ -83,7 +84,7 @@ export default function Home() {
                 Contact Us
               </Link>
               <Link
-                href={"/home#portfolio"}
+                href={"/#portfolio"}
                 className="sm:transparent__button-large transparent__button-md "
               >
                 Check our Portfolio
@@ -145,27 +146,63 @@ export default function Home() {
                 Learn more
               </Link>
             </div>
-            {/* <div className="md:flex hidden flex-row-reverse  pb-60">
-              <div className="about__us-card-container w-1/2 grid grid-cols-2 gap-8 gap-x-0">
-                <div className="about__us-card">
-                  <span>10 +</span>
-                  <span>Completed Projects</span>
-                </div>
-                <div className="about__us-card">
-                  <span>100 +</span>
-                  <span>Completed Projects</span>
-                </div>
-                <div className="about__us-card">
-                  <span>10 +</span>
-                  <span> projects</span>
-                </div>
-                <div className="about__us-card">
-                  <span>10 +</span>
-                  <span>projects</span>
-                </div>
-              </div>
-            </div> */}
           </div>
+        </div>
+      </section>
+
+      <section className="xl:container mx-auto lg:px-10 md:px-10 sm:px-10 ">
+        <div className="section__heading-bold">
+          <h1>Most Affordable pricing </h1>
+        </div>
+
+        <div className="grid justify-center lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-8 md:gap-8 gap-y-16 place-items-center">
+          <PricingCard
+            title={"Basic"}
+            pricing={"3,449"}
+            features={[
+              "8 Post",
+              "2 Reels",
+              "Facebook Handling",
+              "Instagram Handling",
+              "Contnet Writing",
+            ]}
+          ></PricingCard>
+          <PricingCard
+            title={" Silver"}
+            pricing={"5,799"}
+            features={[
+              "10 Post",
+              "3 Reels",
+              "Facebook Handling",
+              "Instagram Handling",
+              "Contnet Writing",
+              "7 instagram Ads",
+            ]}
+          ></PricingCard>
+          <PricingCard
+            title={"Golden"}
+            pricing={"8,999"}
+            features={[
+              "13 Post",
+              "4 Reels",
+              "Facebook Handling",
+              "Instagram Handling",
+              "Contnet Writing",
+              "12 instagram Ads",
+            ]}
+          ></PricingCard>
+          <PricingCard
+            title={"Platinum"}
+            pricing={"13,999"}
+            features={[
+              "16 Post",
+              "6 Reels",
+              "Facebook Handling",
+              "Instagram Handling",
+              "Contnet Writing",
+              "16 instagram Ads",
+            ]}
+          ></PricingCard>
         </div>
       </section>
 
@@ -405,23 +442,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* <section className="portfolio__strip overflow-hidden mt-10">
-        <span>OUR</span>
-        <span>PORTFOLIO</span>
-        <span>OUR</span>
-        <span>DIGITAL MARKETING</span>
-        <span>WEB</span>
-        <span>DEVELOPMENT</span>
-      </section> */}
-
-      {/* <section className="query__section">
-        <h2>
-          {" "}
-          Have any project in <br></br>mind
-        </h2>
-        <button className="orange__button-large">Let's Talk</button>
-      </section> */}
 
       <Footer></Footer>
     </>

@@ -5,7 +5,7 @@
 :root {
   --body: black;
   --text-color: black;
-  --primary-color: #ff6320;
+  --primary-color: #e80000;
 }
 body {
   background-color: var(--body);

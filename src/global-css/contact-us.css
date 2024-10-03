@@ -6,7 +6,8 @@
   --body: black;
   --text-color: white;
   /* --primary-color: #ff6320; */
-  --primary-color: #ef4444;
+
+  --primary-color: #e80000;
   --transparent-white: rgba(255, 255, 255, 0.1);
 }
 body {
@@ -305,7 +306,7 @@ body {
   }
   .our__services-cards:hover {
     /* border: 1px solid rgb(255, 115, 0); */
-    border: 1px solid #7114c8;
+    border: 1px solid var(--primary-color);
   }
   .our__services-cards img {
     @apply sm:w-[50px] xs:w-[45px];

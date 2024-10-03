@@ -6,7 +6,8 @@
   --body: black;
   --text-color: white;
   /* --primary-color: #ff6320; */
-  --primary-color: #ef4444;
+  /* --primary-color: #ef4444; */
+  --primary-color: #e80000;
   --transparent-white: rgba(255, 255, 255, 0.1);
 }
 body {
@@ -164,7 +165,7 @@ body {
     @apply xs:text-3xl text-2xl   md:text-4xl  lg:text-5xl  text-nowrap font-medium tracking-wider;
   }
   .moving__strip :nth-child(2n) {
-    color: #ef4444;
+    color: var(--primary-color);
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
   }
@@ -349,7 +350,8 @@ body {
     line-height: 1.3rem;
   }
   .our__services-cards:hover {
-    border: 1px solid rgb(255, 115, 0);
+    /* border: 1px solid rgb(255, 115, 0); */
+    border: 1px solid var(--primary-color);
   }
 
   /* portfolio section
@@ -367,7 +369,7 @@ body {
     @apply sm:text-5xl xs:text-4xl text-3xl   md:text-7xl  text-nowrap font-semibold tracking-wider;
   }
   .portfolio__strip :nth-child(2n) {
-    color: #ef4444;
+    color: var(--primary-color);
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
   }
@@ -445,7 +447,7 @@ body {
   }
 
   .our__client-cards:hover {
-    border: 1px solid rgb(255, 115, 0);
+    border: 1px solid var(--primary-color);
   }
 
   /* FOOTER */

@@ -44,18 +44,12 @@ export default function RootLayout({ children }) {
 
 
 
-          <Navbar  ></Navbar>
+          <Navbar></Navbar>
 
 
           {children}
         </div>
-        {/* <Script
-          src="https://static.elfsight.com/platform/platform.js"
-          strategy="afterInteractive" // Load after initial content is rendered
-          defer // Defer execution until after content rendering
-          data-use-service-core
-        />
-        <div class="elfsight-app-0172c049-cb73-4637-b769-c915f236fc42" data-elfsight-app-lazy></div> */}
+
         <WhatsApp></WhatsApp>
       </body>
     </html >

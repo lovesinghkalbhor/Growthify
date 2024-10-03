@@ -87,69 +87,6 @@ export default function Home() {
   };
   return (
     <>
-      {/* <div className=" hero__container overflow-x-hidden relative z-10 sm:mb-40 xs:mb-20">
-        <Image
-          className="object-cover absolute h-full w-full"
-          src="/images/hero-workers-background-image.png"
-          // fill={true}
-          width={500}
-          height={300}
-        ></Image>
-
-        <header className="grid lg:grid-cols-5 md:grid-cols-6 xl:container mx-auto">
-          <div className="lg:col-span-3 md:col-span-4  sm:my-44 my-28 md:mx-16  sm:mx-10  mx-6 ">
-             <div className="hero__text__container col-span-6 row-start-1 col-start-2 sm:mt-0 mt-40">
-              <motion.h1
-                className="xl:text-[2.9rem] lg:text-[2.9rem] md:text-3xl sm:text-4xl xs:3xl text-2xl  lg:leading-tight  font-bold"
-                initial="hidden"
-                whileInView="show"
-                transition={{ staggerChildren: 0.02 }}
-              >
-                {stringToCharArray(hero_heading).map((char) => (
-                  <motion.span key={char} variants={text_reveal}>
-                    {char}
-                  </motion.span>
-                ))}
-              </motion.h1>
-
-              <motion.p
-                initial="hidden"
-                whileInView="show"
-                transition={{ staggerChildren: 0.01 }}
-                className=" sm:text-base text-sm mt-4 pr-12"
-              >
-                {stringToCharArray(hero_para).map((char) => (
-                  <motion.span key={char} variants={text_reveal}>
-                    {char}
-                  </motion.span>
-                ))}
-              </motion.p>
-            </div>
-
-            <div className="hero__button__container col-span-6 row-start-3 col-start-2">
-              <button className="sm:orange__button-large orange__button-md  lg:mr-12 sm:mr-8 mr-3">
-                Contact Us
-              </button>
-              <button className="sm:transparent__button-large transparent__button-md ">
-                Check our Portfolio
-              </button>
-            </div>
-          </div>
-
-          <Image
-            className=" md:block hidden z-10 lg:w-24 lg:h-24 md:w-20 md:h-20 translate-y-96"
-            src="/images/hero-circle.png"
-            width={100}
-            height={100}
-          ></Image>
-          <Image
-            className="md:block hidden z-10  lg:w-24 lg:h-24 translate-y-56"
-            src="/images/hero-traingle.png"
-            width={100}
-            height={100}
-          ></Image>  
-        </header>
-      </div> */}
       <div className=" hero__container overflow-x-hidden relative z-60 sm:mb-10 xs:mb-20">
         {/* <Image
           className="object-cover absolute h-full w-full"
@@ -242,29 +179,6 @@ export default function Home() {
           <span>BACKEND DEVELOPMENT</span>
           <span>E-COMMERSE WEBSITE</span>
         </motion.div>
-        {/* <motion.div
-          className="space-x-16 cursor-pointer moving__strip"
-          animate={{
-            x: isHovering ? animationProgress.current : containerWidth.current, // Pause at current position on hover
-            transition: { duration: 5, repeat: Infinity, ease: "linear" }, // Customize as needed
-          }}
-        >
-          <span>DIGITAL MARKETING</span>
-          <span>SOCIAL MEDIA</span>
-          <span>GOOGLE AD</span>
-          <span>SOCIAL MEDIA AD</span>
-          <span>INSTAGRAM MARKETING</span>
-          <span>DIGITAL MARKETING</span>
-          <span>SOCIAL MEDIA</span>
-          <span>GOOGLE AD</span>
-          <span>SOCIAL MEDIA AD</span>
-          <span>INSTAGRAM MARKETING</span>
-          <span>DIGITAL MARKETING</span>
-          <span>SOCIAL MEDIA</span>
-          <span>GOOGLE AD</span>
-          <span>SOCIAL MEDIA AD</span>
-          <span>INSTAGRAM MARKETING</span>
-        </motion.div> */}
       </motion.div>
 
       <section className="relative md:mt-40 sm:mt-48 xs:mt-32 mt-28">
@@ -577,34 +491,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <section className="portfolio__strip overflow-hidden mt-10">
-        <span>OUR</span>
-        <span>PORTFOLIO</span>
-        <span>OUR</span>
-        <span>DIGITAL MARKETING</span>
-        <span>WEB</span>
-        <span>DEVELOPMENT</span>
-      </section> */}
       <div className=" bg-stone-950">
         <section className="our__clients xl:container mx-auto">
-          {/* <div className="section__heading w-full justify-start sm:py-36 xs:py-28 py-20 sx:px-10 px-5">
-            <motion.h1
-              initial="hidden"
-              whileInView="show"
-              transition={{ staggerChildren: 0.1 }}
-            >
-              {stringToCharArray(our_client_heading).map((char) => (
-                <motion.span
-                  key={char}
-                  variants={text_reveal}
-                  transition={{ duration: 0.2 }}
-                >
-                  {char}
-                </motion.span>
-              ))}
-            </motion.h1>
-            <hr />
-          </div> */}
           <div className="section__heading-bold  lg:pb-36 md:pb-28 sm:pb-16 pb-8">
             <h1>{our_client_heading}</h1>
           </div>
