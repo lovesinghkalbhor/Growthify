@@ -423,7 +423,7 @@ body {
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.24);
     /* height: 19rem; */
-    @apply sm:h-72 h-64;
+    @apply sm:h-80 h-64;
   }
   .our__client-cards .our__client-cards-imageContainer img {
     @apply w-6;
@@ -442,7 +442,7 @@ body {
     @apply sm:text-xl xs:text-base font-bold;
   }
   .our__client-cards p {
-    @apply sm:text-sm text-[0.6rem] font-light;
+    @apply sm:text-sm text-[0.8rem] font-light;
     line-height: 1.3rem;
   }
 

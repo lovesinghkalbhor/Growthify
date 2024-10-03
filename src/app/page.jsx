@@ -517,14 +517,14 @@ export default function Home() {
             whileInView="show"
             variants={card_animation_parent}
             viewport={{ amount: 0.2 }}
-            className="relative  grid sm:grid-cols-2 gap-5 p-20 px-10 pt-5 lg:w-3/5 md:w-4/5 justify-items-end mx-auto"
+            className="relative  grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5 p-20 px-10 pt-5 lg:w-11/12 md:w-11/12 justify-items-end mx-auto"
           >
-            <Image
+            {/* <Image
               className="absolute our__clients-background-light -top-0"
               src="/images/background-light.png"
               width={512}
               height={512}
-            ></Image>
+            ></Image> */}
             <div className="our__client-cards relative z-10">
               <div className="our__client-cards-imageContainer">
                 <Image
@@ -555,11 +555,10 @@ export default function Home() {
               </div>
 
               <div className="our__client-text-content">
-                <span> Arvind Kumar</span>
+                <span>Er amit upadhyay</span>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis autem eius eveniet libero unde quia deserunt
-                  aspernatur modi. Exercitationem, praesentium!
+                  The product quality is consistently outstanding, exceeding my
+                  expectations every time
                 </p>
               </div>
             </div>
@@ -597,11 +596,10 @@ export default function Home() {
                 ></Image>{" "}
               </div>
               <div className="our__client-text-content">
-                <span>Rahul chaudhary </span>
+                <span>Lucky Pal</span>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis autem eius eveniet libero unde quia deserunt
-                  aspernatur modi. Exercitationem, praesentium!
+                  They have very good web development team, they have made my
+                  coaching website
                 </p>
               </div>
             </div>
@@ -639,11 +637,11 @@ export default function Home() {
                 ></Image>{" "}
               </div>
               <div className="our__client-text-content">
-                <span>Shubham prajapat</span>
+                <span>The Mg</span>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis autem eius eveniet libero unde quia deserunt
-                  aspernatur modi. Exercitationem, praesentium!
+                  Growthifyservices boosted our revenue and brand awareness with
+                  their exceptional marketing strategies. Their tailored
+                  approach delivered impressive results.
                 </p>
               </div>
             </div>
@@ -681,11 +679,11 @@ export default function Home() {
                 ></Image>{" "}
               </div>
               <div className="our__client-text-content">
-                <span> Om tomar</span>
+                <span> Om patel</span>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis autem eius eveniet libero unde quia deserunt
-                  aspernatur modi. Exercitationem, praesentium!
+                  I’m very satisfied with Growthifyservices' web development.
+                  The team was professional and delivered a fast, visually
+                  appealing website with excellent SEO. Highly recommend!
                 </p>
               </div>
             </div>
