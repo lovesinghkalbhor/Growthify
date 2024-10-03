@@ -128,21 +128,16 @@ export default function Home() {
                 We are one of The Most Effective Software Company in india{" "}
               </h2>
               <p>
-                We're a top software company in India specializing in mobile
-                apps and website development. A Young Entrepreneur founded this
-                company to bridge the gap between business needs and the digital
-                world. Our goal is to offer comprehensive digital marketing and
-                software solutions to help businesses in all industries improve
-                their marketing efforts. We started small but grew big thanks to
-                our dedicated team of creative and tech-savvy experts. They
-                create apps with passion and websites with care. Our focus is on
+                We're a top software company in India specializing website
+                development and digital marketing. We founded this company to
+                bridge the gap between business needs and the digital world. Our
+                goal is to offer comprehensive digital marketing and software
+                solutions to help businesses in all industries improve their
+                marketing efforts. We started small but grew big thanks to our
+                dedicated team of creative and tech-savvy experts. They create
+                apps with passion and websites with care. Our focus is on
                 delivering high-quality, user-friendly apps and websites
-                worldwide. We have thousands of satisfied clients in Australia,
-                Canada, New Zealand, UAE the United Kingdom, and the United
-                States who rely on us for their digital success. we're not just
-                a software company in India – we're your strategic partner in
-                digital transformation. Experience the difference with India's
-                premier software experts at Super Geeks Soft Tech.
+                worldwide.
               </p>
               <Link
                 href={"/about"}
@@ -227,16 +222,16 @@ export default function Home() {
             <div className="about__us-text-container">
               <h2>Turning Digital Dreams into Reality </h2>
               <p>
-                At SuperGeeks Soft Tech Pvt. Ltd., we aim to transform the
-                digital world globally, and our core value is innovation. We
-                push boundaries, use the latest technologies, and nurture a
-                culture of creativity. Our team is always looking for new
-                solutions, providing services that set new industry standards.
-                We prioritize transparency, reliability, and accountability in
+                At Growthifyservices, we aim to transform the digital world
+                globally, and our core value is innovation. We push boundaries,
+                use the latest technologies, and nurture a culture of
+                creativity. Our team is always looking for new solutions,
+                providing services that set new industry standards. We
+                prioritize transparency, reliability, and accountability in
                 everything we do. Collaboration and diversity are crucial for
                 us, bringing fresh ideas and innovative solutions. We value each
                 person’s contribution, which leads to collective success and
-                growth at SuperGeeks Soft Tech.
+                growth at Growthifyservices .
               </p>
             </div>
           </div>

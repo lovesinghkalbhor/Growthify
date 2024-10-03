@@ -423,7 +423,7 @@ body {
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.24);
     /* height: 19rem; */
-    @apply sm:h-80 h-64;
+    @apply sm:h-80 h-72;
   }
   .our__client-cards .our__client-cards-imageContainer img {
     @apply w-6;
