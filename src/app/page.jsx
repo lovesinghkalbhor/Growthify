@@ -521,17 +521,17 @@ export default function Home() {
             <div className="our__client-cards relative z-10">
               <div className="our__client-cards-imageContainer">
                 <Image
-                  src="/images/star-Filled.png"
+                  src="/images/Star-Filled.png"
                   width={100}
                   height={100}
                 ></Image>{" "}
                 <Image
-                  src="/images/star-Filled.png"
+                  src="/images/Star-Filled.png"
                   width={100}
                   height={100}
                 ></Image>{" "}
                 <Image
-                  src="/images/star-Filled.png"
+                  src="/images/Star-Filled.png"
                   width={100}
                   height={100}
                 ></Image>{" "}
@@ -559,19 +559,19 @@ export default function Home() {
             <div className="our__client-cards relative z-10">
               <div className="our__client-cards-imageContainer">
                 <Image
-                  src="/images/star-Filled.png"
+                  src="/images/Star-Filled.png"
                   width={100}
                   height={100}
                   quality={30}
                 ></Image>{" "}
                 <Image
-                  src="/images/star-Filled.png"
+                  src="/images/Star-Filled.png"
                   width={100}
                   height={100}
                   quality={30}
                 ></Image>{" "}
                 <Image
-                  src="/images/star-Filled.png"
+                  src="/images/Star-Filled.png"
                   width={100}
                   height={100}
                   quality={30}
@@ -601,19 +601,19 @@ export default function Home() {
             <div className="our__client-cards relative z-10">
               <div className="our__client-cards-imageContainer">
                 <Image
-                  src="/images/star-Filled.png"
+                  src="/images/Star-Filled.png"
                   width={100}
                   height={100}
                   quality={30}
                 ></Image>{" "}
                 <Image
-                  src="/images/star-Filled.png"
+                  src="/images/Star-Filled.png"
                   width={100}
                   height={100}
                   quality={30}
                 ></Image>{" "}
                 <Image
-                  src="/images/star-Filled.png"
+                  src="/images/Star-Filled.png"
                   width={100}
                   height={100}
                   quality={30}
@@ -643,19 +643,19 @@ export default function Home() {
             <div className="our__client-cards relative z-10">
               <div className="our__client-cards-imageContainer">
                 <Image
-                  src="/images/star-Filled.png"
+                  src="/images/Star-Filled.png"
                   width={100}
                   height={100}
                   quality={30}
                 ></Image>{" "}
                 <Image
-                  src="/images/star-Filled.png"
+                  src="/images/Star-Filled.png"
                   width={100}
                   height={100}
                   quality={30}
                 ></Image>{" "}
                 <Image
-                  src="/images/star-Filled.png"
+                  src="/images/Star-Filled.png"
                   width={100}
                   height={100}
                   quality={30}
