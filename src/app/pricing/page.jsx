@@ -95,8 +95,14 @@ export default function Pricing() {
       </div>
 
       <section className="xl:container mx-auto lg:px-10 md:px-10 sm:px-10 ">
-        <div className="section__heading-bold">
-          <h1>Our Digital Marketing Pricing </h1>
+        <div className="section__heading-2">
+          <h1>Our Most Affordable Digital Marketing Pricing</h1>
+          <p>
+            Discover our most affordable digital marketing packages, designed to
+            deliver high-impact results without breaking your budget. Get expert
+            services tailored to your business needs at competitive prices
+          </p>
+          {/* <hr /> */}
         </div>
 
         <div className="grid justify-center lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-8 md:gap-8 gap-y-16 place-items-center">
@@ -151,8 +157,14 @@ export default function Pricing() {
       </section>
 
       <section className="xl:container mx-auto lg:px-10 md:px-10 sm:px-10 sm:mt-20">
-        <div className="section__heading-bold">
-          <h1>Our Web Development Pricing </h1>
+        <div className="section__heading-2">
+          <h1>Our Most Affordable Web devlopment Pricing</h1>
+          <p>
+            Get top-quality web development at unbeatable prices. Our affordable
+            packages offer tailored solutions to help your business thrive
+            online, plus enjoy an exclusive 25% discount on HeroXHost hosting
+          </p>
+          {/* <hr /> */}
         </div>
 
         <div className="grid justify-center lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-8 md:gap-8 gap-y-16 place-items-center">
