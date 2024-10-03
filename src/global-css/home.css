@@ -346,7 +346,7 @@ body {
     @apply sm:text-xl font-bold xs:text-lg;
   }
   .our__services-cards p {
-    @apply sm:text-sm text-[0.6rem] font-light;
+    @apply sm:text-sm text-[0.8rem] font-light;
     line-height: 1.3rem;
   }
   .our__services-cards:hover {

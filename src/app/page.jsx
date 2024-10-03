@@ -350,12 +350,13 @@ export default function Home() {
                 height={100}
               ></Image>
               <div className="portfolio-image-container-info">
-                <span> Web Development</span>
+                <span> Digital Marketing webstie</span>
                 <div>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis autem eius eveniet libero unde quia deserunt
-                    aspernatur modi. Exercitationem, praesentium!
+                    A clean and modern website designed to showcase digital
+                    marketing services. Features include an intuitive layout,
+                    service listings, and lead generation forms, providing a
+                    professional platform for agencies to connect with clients.
                   </p>
                   <Link
                     href={"portfolio_projects/digital_marketing"}
@@ -376,9 +377,10 @@ export default function Home() {
                 <span>Cloud website</span>
                 <div>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis autem eius eveniet libero unde quia deserunt
-                    aspernatur modi. Exercitationem, praesentium!
+                    A website designed for a cloud hosting provider, similar to
+                    DigitalOcean. It features detailed service descriptions,
+                    pricing plans, and customer support integration, offering
+                    businesses scalable cloud solutions.
                   </p>
                   <Link
                     href={"portfolio_projects/cloud_website"}
@@ -401,9 +403,10 @@ export default function Home() {
                 <span> Web Development</span>
                 <div>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis autem eius eveniet libero unde quia deserunt
-                    aspernatur modi. Exercitationem, praesentium!
+                    A user-friendly platform for renting bikes, offering a
+                    seamless booking process, location-based services, and
+                    detailed bike listings. The website is designed to make it
+                    easy for users to browse and rent bikes on the go.
                   </p>
                   <Link
                     href={"portfolio_projects/ridenow_website"}
@@ -422,12 +425,13 @@ export default function Home() {
                 height={300}
               ></Image>
               <div className="portfolio-image-container-info">
-                <span> Web Development</span>
+                <span> Course Selling website</span>
                 <div>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis autem eius eveniet libero unde quia deserunt
-                    aspernatur modi. Exercitationem, praesentium!
+                    An e-commerce platform built to sell online courses. It
+                    features a dynamic course catalog, secure payment
+                    integration, and a student dashboard, providing an efficient
+                    and engaging learning experience.
                   </p>
                   <Link
                     href={"portfolio_projects/coaching_website"}
@@ -447,12 +451,14 @@ export default function Home() {
                 height={300}
               ></Image>
               <div className="portfolio-image-container-info">
-                <span> Web Development</span>
+                <span>Registrar Panel</span>
                 <div>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis autem eius eveniet libero unde quia deserunt
-                    aspernatur modi. Exercitationem, praesentium!
+                    A robust dashboard built for hosting providers to
+                    efficiently manage domain registrations, client accounts,
+                    and hosting plans. The interface provides real-time
+                    analytics, user management, and easy access to hosting
+                    services, streamlining the entire registrar process
                   </p>
                   <Link
                     href={"portfolio_projects/dashboard"}
@@ -471,12 +477,13 @@ export default function Home() {
                 height={300}
               ></Image>
               <div className="portfolio-image-container-info">
-                <span> Web Development</span>
+                <span>Food Deals</span>
                 <div>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis autem eius eveniet libero unde quia deserunt
-                    aspernatur modi. Exercitationem, praesentium!
+                    A visually appealing website design focused on providing
+                    users with the best food deals. The layout is optimized for
+                    easy navigation, allowing users to quickly find and claim
+                    offers at their favorite restaurants.
                   </p>
                   <Link
                     href={"portfolio_projects/coupons_website"}
