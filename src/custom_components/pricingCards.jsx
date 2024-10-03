@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function PricingCard({ pricing, features, title }) {
   return (
-    <div className="bg-[#FF104F] h-full sm:max-w-96 xs:w-4/5 w-11/12  pt-16 pb-10 px-8 rounded-xl sm:mx-0 mx-8">
+    <div className="bg-[#FF104F] h-full sm:max-w-96 md:w-full xs:w-4/5 w-11/12  pt-16 pb-10 px-8 rounded-xl sm:mx-0 mx-8">
       <h1 className="xs:text-2xl text-xl  font-extrabold text-center tracking-widest mb-14">
         {title}
       </h1>

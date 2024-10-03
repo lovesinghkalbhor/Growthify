@@ -96,7 +96,7 @@ export default function Heroxhost() {
       </div>
 
       <section className="xl:container mx-auto lg:px-20 md:px-10 sm:px-10  ">
-        <h1 className="text-center mb-56 xl:text-[2.9rem] lg:text-[2.9rem] md:text-3xl sm:text-4xl xs:3xl text-2xl  lg:leading-tight  tracking-wide font-semibold">
+        <h1 className="text-center mt-28 sm:mb-48 mb-28 xl:text-[2.9rem] lg:text-[2.9rem] md:text-3xl sm:text-4xl xs:3xl text-2xl  lg:leading-tight  tracking-wide font-semibold">
           Our Partnership with <br></br> HeroXHost
         </h1>
 

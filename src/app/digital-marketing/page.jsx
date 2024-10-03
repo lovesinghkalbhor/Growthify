@@ -158,10 +158,9 @@ export default function Home() {
             deliver high-impact results without breaking your budget. Get expert
             services tailored to your business needs at competitive prices
           </p>
-          {/* <hr /> */}
         </div>
 
-        <div className="grid justify-center lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-8 md:gap-8 gap-y-16 place-items-center">
+        <div className="grid justify-center xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-8 md:gap-8 gap-y-16 place-items-center">
           <PricingCard
             title={"Basic"}
             pricing={"3,449"}
