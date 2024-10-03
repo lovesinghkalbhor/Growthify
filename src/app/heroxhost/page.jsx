@@ -45,7 +45,7 @@ export default function Heroxhost() {
         ></Image>
 
         <header className="mx-auto md:max-w-3xl sm:max-w-xl  max-w-lg">
-          <div className=" sm:my-44 sm:mt-52 my-28 mt-40 md:mx-16 text-center sm:mx-auto  mx-6 ">
+          <div className=" sm:my-44 sm:mt-52 my-28 mt-64 md:mx-16 text-center sm:mx-auto  mx-6 ">
             {/* <div className="grid-cols-3 my-44 mx-20 max-w-2xl"> */}
             <div className="hero__text__container  sm:mt-0 mt-40">
               <motion.h1
