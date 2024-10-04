@@ -9,19 +9,7 @@ import Link from "next/link";
 
 export default function Heroxhost() {
   // animation for cards
-  const card_animation_parent = {
-    hidden: { opacity: 0, translateX: -100 },
-    show: {
-      opacity: [0, 1],
-      translateX: 0,
-      transition: {
-        duration: 0.6,
-        type: "spring",
-        // delay: 0.4,
-        bounce: 0.3,
-      },
-    },
-  };
+
   const text_reveal = {
     hidden: { opacity: 0 },
     show: {
@@ -77,7 +65,7 @@ export default function Heroxhost() {
               </motion.p>
             </div>
 
-            <div className="hero__button__container  ">
+            <div className="hero__button__container ">
               <Link
                 href={"contact-us"}
                 className="sm:transparent__button-large transparent__button-md "
@@ -88,7 +76,7 @@ export default function Heroxhost() {
                 href={"https://www.heroxhost.com/"}
                 className="sm:orange__button-large orange__button-md  lg:ml-12 sm:ml-8 ml-3"
               >
-                Check HeroXhost Website
+                HeroXhost Website
               </a>
             </div>
           </div>
