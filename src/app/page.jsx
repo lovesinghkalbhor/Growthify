@@ -1,8 +1,6 @@
 "use client";
 import "@/global-css/home.css";
 import Image from "next/image";
-import dynamic from "next/dynamic";
-
 import { motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import Footer from "@/custom_components/footer";

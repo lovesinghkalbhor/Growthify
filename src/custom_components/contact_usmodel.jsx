@@ -57,17 +57,24 @@ export default function ContactUsModal() {
   return (
     <>
       <button
-        className="fixed bottom-0 left-2 flex justify-center items-center  z-[1000]  w-32 h-8 rounded-t-2xl bg-white border border-black"
+        className="sm:hidden  fixed bottom-5 left-5 flex justify-center items-center  z-[1000] animate-bounce w-16 h-16 rounded-full bg-white border border-black"
         onClick={() => document.getElementById("my_modal_3").showModal()}
       >
-        {/* <Image
+        <Image
           src="/images/chat.png"
-          className="w-8 h-8"
+          className="w-8 h-8 "
           width={40}
           height={40}
           alt="Chat Icon"
-        /> */}
-        <span className=" text-black text-nowrap font-bold">Enquire Now</span>
+        />
+      </button>
+      <button
+        className="hidden fixed top-64 left-0 sm:flex justify-center items-center  z-[1000]  w-8 h-32 rounded-e-xl bg-white border border-black"
+        onClick={() => document.getElementById("my_modal_3").showModal()}
+      >
+        <span className="  rotate-90 text-black text-nowrap font-bold">
+          Enquire Now
+        </span>
       </button>
       <dialog data-theme="light" id="my_modal_3" className="modal rounded-lg">
         <div className="modal-box">
