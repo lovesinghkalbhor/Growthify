@@ -57,16 +57,19 @@ export default function ContactUsModal() {
   return (
     <>
       <button
-        className="fixed bottom-5 flex justify-center items-center animate-bounce z-[1000] left-5 w-16 h-16 rounded-full bg-white border border-black"
+        className="fixed top-72 left-0 flex justify-center items-center  z-[1000]  w-8 h-32 rounded-e-2xl bg-white border border-black"
         onClick={() => document.getElementById("my_modal_3").showModal()}
       >
-        <Image
+        {/* <Image
           src="/images/chat.png"
           className="w-8 h-8"
           width={40}
           height={40}
           alt="Chat Icon"
-        />
+        /> */}
+        <span className="rotate-90 text-black text-nowrap font-bold">
+          Enquire Now
+        </span>
       </button>
       <dialog data-theme="light" id="my_modal_3" className="modal rounded-lg">
         <div className="modal-box">
